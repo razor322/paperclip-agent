@@ -1,0 +1,76 @@
+# Local-only production stack for one laptop.
+#
+#   cd docker
+#   ./local-up.ps1        # creates .env once, then starts the stack
+#   docker compose -f docker-compose.local.yml up -d --pull always
+#
+# Runs the published image (ghcr.io/paperclipai/paperclip) so nothing is built
+# from source, keeps Postgres in its own container, and binds the UI to
+# 127.0.0.1 only â€” nothing else on the LAN can reach it.
+services:
+  db:
+    image: postgres:17-alpine
+    container_name: paperclip-local-db
+    restart: unless-stopped
+    # Caps for a laptop-sized WSL2 VM (6 GB / 6 cores in ~/.wslconfig).
+    cpus: 1.0
+    mem_limit: 1g
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-paperclip}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-paperclip}
+      POSTGRES_DB: ${POSTGRES_DB:-paperclip}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-paperclip} -d ${POSTGRES_DB:-paperclip}"]
+      interval: 2s
+      timeout: 5s
+      retries: 30
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  server:
+    image: ghcr.io/paperclipai/paperclip:${PAPERCLIP_IMAGE_TAG:-latest}
+    container_name: paperclip-local
+    restart: unless-stopped
+    # Backstop only: idle usage is ~1.2 GiB, 4 concurrent runs peaked at 3.2 GiB.
+    # cpus left uncapped so the 6-core VM in ~/.wslconfig is the only limit.
+    mem_limit: 5g
+    # Run as node directly: the entrypoint skips its full-tree ownership scan of
+    # the Windows bind mount, which otherwise delays server start by minutes.
+    user: "1000:1000"
+    # The image makes tini PID 1; this is only the backstop for leaked children.
+    pids_limit: 2048
+    stop_grace_period: 90s
+    ports:
+      # Loopback only. Do not change to "3100:3100" unless you intend to expose it.
+      - "127.0.0.1:${PAPERCLIP_PORT:-3100}:3100"
+    environment:
+      DATABASE_URL: postgres://${POSTGRES_USER:-paperclip}:${POSTGRES_PASSWORD:-paperclip}@db:5432/${POSTGRES_DB:-paperclip}
+      PORT: "3100"
+      SERVE_UI: "true"
+      PAPERCLIP_DEPLOYMENT_MODE: "authenticated"
+      PAPERCLIP_DEPLOYMENT_EXPOSURE: "private"
+      PAPERCLIP_PUBLIC_URL: "${PAPERCLIP_PUBLIC_URL:-http://localhost:3100}"
+      # Tunnel hostnames the private-hostname guard must accept (comma-separated).
+      PAPERCLIP_ALLOWED_HOSTNAMES: "${PAPERCLIP_ALLOWED_HOSTNAMES:-}"
+      # Only the existing board account may sign in; no open registration.
+      PAPERCLIP_AUTH_DISABLE_SIGN_UP: "true"
+      BETTER_AUTH_SECRET: "${BETTER_AUTH_SECRET:?set BETTER_AUTH_SECRET in docker/.env â€” run local-up.ps1}"
+      PAPERCLIP_TOOL_ACTION_SIGNING_SECRET: "${PAPERCLIP_TOOL_ACTION_SIGNING_SECRET:-}"
+      # Provider keys for the local agent CLIs running inside this container.
+      OPENAI_API_KEY: "${OPENAI_API_KEY:-}"
+      ANTHROPIC_API_KEY: "${ANTHROPIC_API_KEY:-}"
+      GEMINI_API_KEY: "${GEMINI_API_KEY:-}"
+    volumes:
+      - ${PAPERCLIP_DATA_DIR:-../data/docker-paperclip}:/paperclip
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://127.0.0.1:3100/api/health || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 90s
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  pgdata:

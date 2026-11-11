@@ -1,0 +1,583 @@
+- generic [ref=f2e7]:
+  - link "Skip to Main Content" [ref=f2e8] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=f2e9]:
+    - generic [ref=f2e10]:
+      - generic [ref=f2e11]:
+        - complementary [ref=f2e14]:
+          - link "Back to app" [ref=f2e17] [cursor=pointer]:
+            - /url: /AET/dashboard
+          - navigation "Settings" [ref=f2e22]:
+            - generic [ref=f2e23]:
+              - link "General" [ref=f2e24] [cursor=pointer]:
+                - /url: /AET/company/settings
+              - link "Profile" [ref=f2e28] [cursor=pointer]:
+                - /url: /AET/company/settings/instance/profile
+              - link "Members" [ref=f2e35] [cursor=pointer]:
+                - /url: /AET/company/settings/members
+              - link "Secrets" [ref=f2e43] [cursor=pointer]:
+                - /url: /AET/company/settings/secrets
+              - link "Environments" [ref=f2e49] [cursor=pointer]:
+                - /url: /AET/company/settings/instance/environments
+              - link "Access" [ref=f2e63] [cursor=pointer]:
+                - /url: /AET/company/settings/instance/access
+              - link "Export" [ref=f2e68] [cursor=pointer]:
+                - /url: /AET/company/export
+              - link "Import" [ref=f2e74] [cursor=pointer]:
+                - /url: /AET/company/import
+              - link "Experimental" [ref=f2e80] [cursor=pointer]:
+                - /url: /AET/company/settings/instance/experimental
+              - link "Plugins" [ref=f2e85] [cursor=pointer]:
+                - /url: /AET/company/settings/instance/plugins
+              - link "Adapters" [ref=f2e90] [cursor=pointer]:
+                - /url: /AET/company/settings/instance/adapters
+        - generic [ref=f2e97]:
+          - button "Open account menu" [ref=f2e98]:
+            - generic [ref=f2e99]: GY
+            - generic [ref=f2e101]: gybran
+          - link "Share feedback" [ref=f2e102] [cursor=pointer]:
+            - /url: https://paperclip.ing/feedback
+      - separator "Resize sidebar" [ref=f2e105]
+    - generic [ref=f2e107]:
+      - navigation "breadcrumb" [ref=f2e111]:
+        - list [ref=f2e112]:
+          - listitem [ref=f2e113]:
+            - link "AetherLabs" [ref=f2e114] [cursor=pointer]:
+              - /url: /AET/dashboard
+          - listitem [aria-hidden] [ref=f2e115]
+          - listitem [ref=f2e118]:
+            - link "Settings" [ref=f2e119] [cursor=pointer]:
+              - /url: /AET/company/settings
+          - listitem [aria-hidden] [ref=f2e120]
+          - listitem [ref=f2e123]:
+            - link "Import" [disabled] [ref=f2e124]
+      - main [ref=f2e127]:
+        - generic [ref=f2e128]:
+          - generic [ref=f2e129]:
+            - generic [ref=f2e130]:
+              - heading "Import source" [level=2] [ref=f2e131]
+              - paragraph [ref=f2e132]: Choose a GitHub repo or upload a local Paperclip zip package.
+            - generic [ref=f2e133]:
+              - button "GitHub repo" [disabled] [ref=f2e134]
+              - button "Local zip" [disabled] [ref=f2e139]
+            - generic [ref=f2e182]:
+              - button "Choose zip" [disabled]
+              - generic [ref=f2e197]: aetherlabs-local.zip with 60 files (1 MB zip)
+            - generic [ref=f2e152]:
+              - generic [ref=f2e153]:
+                - generic [ref=f2e154]: Target
+                - button [ref=f2e155]
+              - combobox [disabled] [ref=f2e159]:
+                - option "Create new organization"
+                - 'option "Existing company: AetherLabs" [selected]'
+            - generic [ref=f2e168]:
+              - generic [ref=f2e169]:
+                - generic [ref=f2e170]: Collision strategy
+                - button [ref=f2e171]
+              - combobox [disabled] [ref=f2e175]:
+                - option "Rename on conflict" [selected]
+                - option "Skip on conflict"
+                - option "Replace existing"
+            - generic [ref=f2e176]:
+              - button "Preview import" [disabled]
+              - generic [ref=f2e777]: Import in progress — the package and settings unlock when it finishes.
+          - generic [ref=f2e200]:
+            - generic [ref=f2e201]: Import preview
+            - generic [ref=f2e202]: 59 / 60 files selected
+          - generic [ref=f2e204]:
+            - generic [ref=f2e205]:
+              - heading "Adapters" [level=3] [ref=f2e206]
+              - generic [ref=f2e207]: 17 agents
+            - generic [ref=f2e208]:
+              - generic [ref=f2e210]:
+                - generic [ref=f2e211]: agent
+                - generic [ref=f2e212]: Albert
+                - combobox [ref=f2e215]:
+                  - option "Claude Code"
+                  - option "Codex"
+                  - option "Paperclip Runner"
+                  - option "Cursor Cloud"
+                  - option "Gemini CLI"
+                  - option "Grok Build"
+                  - option "Kimi Code"
+                  - option "Hermes Gateway"
+                  - option "Hermes"
+                  - option "OpenCode" [selected]
+                  - option "Pi"
+                  - option "Cursor"
+                  - option "OpenClaw Gateway"
+                  - option "Process"
+                  - option "HTTP"
+                - button "configure adapter" [ref=f2e216]
+              - generic [ref=f2e220]:
+                - generic [ref=f2e221]: agent
+                - generic [ref=f2e222]: Arnold
+                - combobox [ref=f2e225]:
+                  - option "Claude Code"
+                  - option "Codex"
+                  - option "Paperclip Runner"
+                  - option "Cursor Cloud"
+                  - option "Gemini CLI"
+                  - option "Grok Build"
+                  - option "Kimi Code"
+                  - option "Hermes Gateway"
+                  - option "Hermes"
+                  - option "OpenCode" [selected]
+                  - option "Pi"
+                  - option "Cursor"
+                  - option "OpenClaw Gateway"
+                  - option "Process"
+                  - option "HTTP"
+                - button "configure adapter" [ref=f2e226]
+              - generic [ref=f2e230]:
+                - generic [ref=f2e231]: agent
+                - generic [ref=f2e232]: Ayla
+                - combobox [ref=f2e235]:
+                  - option "Claude Code"
+                  - option "Codex"
+                  - option "Paperclip Runner"
+                  - option "Cursor Cloud"
+                  - option "Gemini CLI"
+                  - option "Grok Build"
+                  - option "Kimi Code"
+                  - option "Hermes Gateway"
+                  - option "Hermes"
+                  - option "OpenCode" [selected]
+                  - option "Pi"
+                  - option "Cursor"
+                  - option "OpenClaw Gateway"
+                  - option "Process"
+                  - option "HTTP"
+                - button "configure adapter" [ref=f2e236]
+              - generic [ref=f2e240]:
+                - generic [ref=f2e241]: agent
+                - generic [ref=f2e242]: Bianca
+                - combobox [ref=f2e245]:
+                  - option "Claude Code"
+                  - option "Codex"
+                  - option "Paperclip Runner"
+                  - option "Cursor Cloud"
+                  - option "Gemini CLI"
+                  - option "Grok Build"
+                  - option "Kimi Code"
+                  - option "Hermes Gateway"
+                  - option "Hermes"
+                  - option "OpenCode" [selected]
+                  - option "Pi"
+                  - option "Cursor"
+                  - option "OpenClaw Gateway"
+                  - option "Process"
+                  - option "HTTP"
+                - button "configure adapter" [ref=f2e246]
+              - generic [ref=f2e250]:
+                - generic [ref=f2e251]: agent
+                - generic [ref=f2e252]: Darian
+                - combobox [ref=f2e255]:
+                  - option "Claude Code"
+                  - option "Codex"
+                  - option "Paperclip Runner"
+                  - option "Cursor Cloud"
+                  - option "Gemini CLI"
+                  - option "Grok Build"
+                  - option "Kimi Code"
+                  - option "Hermes Gateway"
+                  - option "Hermes"
+                  - option "OpenCode" [selected]
+                  - option "Pi"
+                  - option "Cursor"
+                  - option "OpenClaw Gateway"
+                  - option "Process"
+                  - option "HTTP"
+                - button "configure adapter" [ref=f2e256]
+              - generic [ref=f2e260]:
+                - generic [ref=f2e261]: agent
+                - generic [ref=f2e262]: Elara
+                - combobox [ref=f2e265]:
+                  - option "Claude Code"
+                  - option "Codex"
+                  - option "Paperclip Runner"
+                  - option "Cursor Cloud"
+                  - option "Gemini CLI"
+                  - option "Grok Build"
+                  - option "Kimi Code"
+                  - option "Hermes Gateway"
+                  - option "Hermes"
+                  - option "OpenCode" [selected]
+                  - option "Pi"
+                  - option "Cursor"
+                  - option "OpenClaw Gateway"
+                  - option "Process"
+                  - option "HTTP"
+                - button "configure adapter" [ref=f2e266]
+              - generic [ref=f2e270]:
+                - generic [ref=f2e271]: agent
+                - generic [ref=f2e272]: Felix
+                - combobox [ref=f2e275]:
+                  - option "Claude Code"
+                  - option "Codex"
+                  - option "Paperclip Runner"
+                  - option "Cursor Cloud"
+                  - option "Gemini CLI"
+                  - option "Grok Build"
+                  - option "Kimi Code"
+                  - option "Hermes Gateway"
+                  - option "Hermes"
+                  - option "OpenCode" [selected]
+                  - option "Pi"
+                  - option "Cursor"
+                  - option "OpenClaw Gateway"
+                  - option "Process"
+                  - option "HTTP"
+                - button "configure adapter" [ref=f2e276]
+              - generic [ref=f2e280]:
+                - generic [ref=f2e281]: agent
+                - generic [ref=f2e282]: Ilya
+                - combobox [ref=f2e285]:
+                  - option "Claude Code"
+                  - option "Codex"
+                  - option "Paperclip Runner"
+                  - option "Cursor Cloud"
+                  - option "Gemini CLI"
+                  - option "Grok Build"
+                  - option "Kimi Code"
+                  - option "Hermes Gateway"
+                  - option "Hermes"
+                  - option "OpenCode" [selected]
+                  - option "Pi"
+                  - option "Cursor"
+                  - option "OpenClaw Gateway"
+                  - option "Process"
+                  - option "HTTP"
+                - button "configure adapter" [ref=f2e286]
+              - generic [ref=f2e290]:
+                - generic [ref=f2e291]: agent
+                - generic [ref=f2e292]: Kael
+                - combobox [ref=f2e295]:
+                  - option "Claude Code"
+                  - option "Codex"
+                  - option "Paperclip Runner"
+                  - option "Cursor Cloud"
+                  - option "Gemini CLI"
+                  - option "Grok Build"
+                  - option "Kimi Code"
+                  - option "Hermes Gateway"
+                  - option "Hermes"
+                  - option "OpenCode" [selected]
+                  - option "Pi"
+                  - option "Cursor"
+                  - option "OpenClaw Gateway"
+                  - option "Process"
+                  - option "HTTP"
+                - button "configure adapter" [ref=f2e296]
+              - generic [ref=f2e300]:
+                - generic [ref=f2e301]: agent
+                - generic [ref=f2e302]: Marcus
+                - combobox [ref=f2e305]:
+                  - option "Claude Code"
+                  - option "Codex"
+                  - option "Paperclip Runner"
+                  - option "Cursor Cloud"
+                  - option "Gemini CLI"
+                  - option "Grok Build"
+                  - option "Kimi Code"
+                  - option "Hermes Gateway"
+                  - option "Hermes"
+                  - option "OpenCode" [selected]
+                  - option "Pi"
+                  - option "Cursor"
+                  - option "OpenClaw Gateway"
+                  - option "Process"
+                  - option "HTTP"
+                - button "configure adapter" [ref=f2e306]
+              - generic [ref=f2e310]:
+                - generic [ref=f2e311]: agent
+                - generic [ref=f2e312]: Mika
+                - combobox [ref=f2e315]:
+                  - option "Claude Code"
+                  - option "Codex"
+                  - option "Paperclip Runner"
+                  - option "Cursor Cloud"
+                  - option "Gemini CLI"
+                  - option "Grok Build"
+                  - option "Kimi Code"
+                  - option "Hermes Gateway"
+                  - option "Hermes"
+                  - option "OpenCode" [selected]
+                  - option "Pi"
+                  - option "Cursor"
+                  - option "OpenClaw Gateway"
+                  - option "Process"
+                  - option "HTTP"
+                - button "configure adapter" [ref=f2e316]
+              - generic [ref=f2e320]:
+                - generic [ref=f2e321]: agent
+                - generic [ref=f2e322]: Nadia
+                - combobox [ref=f2e325]:
+                  - option "Claude Code"
+                  - option "Codex"
+                  - option "Paperclip Runner"
+                  - option "Cursor Cloud"
+                  - option "Gemini CLI"
+                  - option "Grok Build"
+                  - option "Kimi Code"
+                  - option "Hermes Gateway"
+                  - option "Hermes"
+                  - option "OpenCode" [selected]
+                  - option "Pi"
+                  - option "Cursor"
+                  - option "OpenClaw Gateway"
+                  - option "Process"
+                  - option "HTTP"
+                - button "configure adapter" [ref=f2e326]
+              - generic [ref=f2e330]:
+                - generic [ref=f2e331]: agent
+                - generic [ref=f2e332]: Nolan
+                - combobox [ref=f2e335]:
+                  - option "Claude Code"
+                  - option "Codex"
+                  - option "Paperclip Runner"
+                  - option "Cursor Cloud"
+                  - option "Gemini CLI"
+                  - option "Grok Build"
+                  - option "Kimi Code"
+                  - option "Hermes Gateway"
+                  - option "Hermes"
+                  - option "OpenCode" [selected]
+                  - option "Pi"
+                  - option "Cursor"
+                  - option "OpenClaw Gateway"
+                  - option "Process"
+                  - option "HTTP"
+                - button "configure adapter" [ref=f2e336]
+              - generic [ref=f2e340]:
+                - generic [ref=f2e341]: agent
+                - generic [ref=f2e342]: Orion
+                - combobox [ref=f2e345]:
+                  - option "Claude Code"
+                  - option "Codex"
+                  - option "Paperclip Runner"
+                  - option "Cursor Cloud"
+                  - option "Gemini CLI"
+                  - option "Grok Build"
+                  - option "Kimi Code"
+                  - option "Hermes Gateway"
+                  - option "Hermes"
+                  - option "OpenCode" [selected]
+                  - option "Pi"
+                  - option "Cursor"
+                  - option "OpenClaw Gateway"
+                  - option "Process"
+                  - option "HTTP"
+                - button "configure adapter" [ref=f2e346]
+              - generic [ref=f2e350]:
+                - generic [ref=f2e351]: agent
+                - generic [ref=f2e352]: Selene
+                - combobox [ref=f2e355]:
+                  - option "Claude Code"
+                  - option "Codex"
+                  - option "Paperclip Runner"
+                  - option "Cursor Cloud"
+                  - option "Gemini CLI"
+                  - option "Grok Build"
+                  - option "Kimi Code"
+                  - option "Hermes Gateway"
+                  - option "Hermes"
+                  - option "OpenCode" [selected]
+                  - option "Pi"
+                  - option "Cursor"
+                  - option "OpenClaw Gateway"
+                  - option "Process"
+                  - option "HTTP"
+                - button "configure adapter" [ref=f2e356]
+              - generic [ref=f2e360]:
+                - generic [ref=f2e361]: agent
+                - generic [ref=f2e362]: Tessa
+                - combobox [ref=f2e365]:
+                  - option "Claude Code"
+                  - option "Codex"
+                  - option "Paperclip Runner"
+                  - option "Cursor Cloud"
+                  - option "Gemini CLI"
+                  - option "Grok Build"
+                  - option "Kimi Code"
+                  - option "Hermes Gateway"
+                  - option "Hermes"
+                  - option "OpenCode" [selected]
+                  - option "Pi"
+                  - option "Cursor"
+                  - option "OpenClaw Gateway"
+                  - option "Process"
+                  - option "HTTP"
+                - button "configure adapter" [ref=f2e366]
+              - generic [ref=f2e370]:
+                - generic [ref=f2e371]: agent
+                - generic [ref=f2e372]: Zane
+                - combobox [ref=f2e375]:
+                  - option "Claude Code"
+                  - option "Codex"
+                  - option "Paperclip Runner"
+                  - option "Cursor Cloud"
+                  - option "Gemini CLI"
+                  - option "Grok Build"
+                  - option "Kimi Code"
+                  - option "Hermes Gateway"
+                  - option "Hermes"
+                  - option "OpenCode" [selected]
+                  - option "Pi"
+                  - option "Cursor"
+                  - option "OpenClaw Gateway"
+                  - option "Process"
+                  - option "HTTP"
+                - button "configure adapter" [ref=f2e376]
+          - generic [ref=f2e379]:
+            - generic [ref=f2e380]:
+              - checkbox "Start imported agents and routines paused" [checked] [ref=f2e381]
+              - text: Start imported agents and routines paused
+            - button "Importing..." [disabled]
+          - paragraph [ref=f2e781]: Import running on the server — safe to keep waiting; reconnecting won't lose it. Large packages can take several minutes.
+          - generic [ref=f2e383]:
+            - complementary [ref=f2e384]:
+              - heading "Package files" [level=2] [ref=f2e386]
+              - tree "Files" [ref=f2e388]:
+                - treeitem "Select .paperclip.yaml .paperclip.yaml" [checked] [level=1] [selected] [ref=f2e389] [cursor=pointer]:
+                  - checkbox "Select .paperclip.yaml" [checked] [ref=f2e391]
+                  - generic [ref=f2e392]: .paperclip.yaml
+                - treeitem "Select COMPANY.md COMPANY.md skip" [level=1] [ref=f2e400] [cursor=pointer]:
+                  - checkbox "Select COMPANY.md" [ref=f2e402]
+                  - generic [ref=f2e403]: COMPANY.md
+                  - generic [ref=f2e409]: skip
+                - treeitem "Select README.md README.md" [checked] [level=1] [ref=f2e411] [cursor=pointer]:
+                  - checkbox "Select README.md" [checked] [ref=f2e413]
+                  - generic [ref=f2e414]: README.md
+                - treeitem "Select agents agents Collapse agents" [checked] [expanded] [level=1] [ref=f2e420]:
+                  - checkbox "Select agents" [checked] [ref=f2e422]
+                  - generic [ref=f2e423]: agents
+                  - button "Collapse agents" [ref=f2e428]
+                - treeitem "Select agents/albert albert Expand albert" [checked] [level=2] [ref=f2e431]:
+                  - checkbox "Select agents/albert" [checked] [ref=f2e433]
+                  - generic [ref=f2e434]: albert
+                  - button "Expand albert" [ref=f2e439]
+                - treeitem "Select agents/arnold arnold Expand arnold" [checked] [level=2] [ref=f2e442]:
+                  - checkbox "Select agents/arnold" [checked] [ref=f2e444]
+                  - generic [ref=f2e445]: arnold
+                  - button "Expand arnold" [ref=f2e450]
+                - treeitem "Select agents/ayla ayla Expand ayla" [checked] [level=2] [ref=f2e453]:
+                  - checkbox "Select agents/ayla" [checked] [ref=f2e455]
+                  - generic [ref=f2e456]: ayla
+                  - button "Expand ayla" [ref=f2e461]
+                - treeitem "Select agents/bianca bianca Expand bianca" [checked] [level=2] [ref=f2e464]:
+                  - checkbox "Select agents/bianca" [checked] [ref=f2e466]
+                  - generic [ref=f2e467]: bianca
+                  - button "Expand bianca" [ref=f2e472]
+                - treeitem "Select agents/darian darian Expand darian" [checked] [level=2] [ref=f2e475]:
+                  - checkbox "Select agents/darian" [checked] [ref=f2e477]
+                  - generic [ref=f2e478]: darian
+                  - button "Expand darian" [ref=f2e483]
+                - treeitem "Select agents/elara elara Expand elara" [checked] [level=2] [ref=f2e486]:
+                  - checkbox "Select agents/elara" [checked] [ref=f2e488]
+                  - generic [ref=f2e489]: elara
+                  - button "Expand elara" [ref=f2e494]
+                - treeitem "Select agents/felix felix Expand felix" [checked] [level=2] [ref=f2e497]:
+                  - checkbox "Select agents/felix" [checked] [ref=f2e499]
+                  - generic [ref=f2e500]: felix
+                  - button "Expand felix" [ref=f2e505]
+                - treeitem "Select agents/ilya ilya Expand ilya" [checked] [level=2] [ref=f2e508]:
+                  - checkbox "Select agents/ilya" [checked] [ref=f2e510]
+                  - generic [ref=f2e511]: ilya
+                  - button "Expand ilya" [ref=f2e516]
+                - treeitem "Select agents/kael kael Expand kael" [checked] [level=2] [ref=f2e519]:
+                  - checkbox "Select agents/kael" [checked] [ref=f2e521]
+                  - generic [ref=f2e522]: kael
+                  - button "Expand kael" [ref=f2e527]
+                - treeitem "Select agents/marcus marcus Expand marcus" [checked] [level=2] [ref=f2e530]:
+                  - checkbox "Select agents/marcus" [checked] [ref=f2e532]
+                  - generic [ref=f2e533]: marcus
+                  - button "Expand marcus" [ref=f2e538]
+                - treeitem "Select agents/mika mika Expand mika" [checked] [level=2] [ref=f2e541]:
+                  - checkbox "Select agents/mika" [checked] [ref=f2e543]
+                  - generic [ref=f2e544]: mika
+                  - button "Expand mika" [ref=f2e549]
+                - treeitem "Select agents/nadia nadia Expand nadia" [checked] [level=2] [ref=f2e552]:
+                  - checkbox "Select agents/nadia" [checked] [ref=f2e554]
+                  - generic [ref=f2e555]: nadia
+                  - button "Expand nadia" [ref=f2e560]
+                - treeitem "Select agents/nolan nolan Expand nolan" [checked] [level=2] [ref=f2e563]:
+                  - checkbox "Select agents/nolan" [checked] [ref=f2e565]
+                  - generic [ref=f2e566]: nolan
+                  - button "Expand nolan" [ref=f2e571]
+                - treeitem "Select agents/orion orion Expand orion" [checked] [level=2] [ref=f2e574]:
+                  - checkbox "Select agents/orion" [checked] [ref=f2e576]
+                  - generic [ref=f2e577]: orion
+                  - button "Expand orion" [ref=f2e582]
+                - treeitem "Select agents/selene selene Expand selene" [checked] [level=2] [ref=f2e585]:
+                  - checkbox "Select agents/selene" [checked] [ref=f2e587]
+                  - generic [ref=f2e588]: selene
+                  - button "Expand selene" [ref=f2e593]
+                - treeitem "Select agents/tessa tessa Expand tessa" [checked] [level=2] [ref=f2e596]:
+                  - checkbox "Select agents/tessa" [checked] [ref=f2e598]
+                  - generic [ref=f2e599]: tessa
+                  - button "Expand tessa" [ref=f2e604]
+                - treeitem "Select agents/zane zane Expand zane" [checked] [level=2] [ref=f2e607]:
+                  - checkbox "Select agents/zane" [checked] [ref=f2e609]
+                  - generic [ref=f2e610]: zane
+                  - button "Expand zane" [ref=f2e615]
+                - treeitem "Select images images Collapse images" [checked] [expanded] [level=1] [ref=f2e618]:
+                  - checkbox "Select images" [checked] [ref=f2e620]
+                  - generic [ref=f2e621]: images
+                  - button "Collapse images" [ref=f2e626]
+                - treeitem "Select images/company-logo.png company-logo.png" [checked] [level=2] [ref=f2e629] [cursor=pointer]:
+                  - checkbox "Select images/company-logo.png" [checked] [ref=f2e631]
+                  - generic [ref=f2e632]: company-logo.png
+                - treeitem "Select images/org-chart.png org-chart.png" [checked] [level=2] [ref=f2e638] [cursor=pointer]:
+                  - checkbox "Select images/org-chart.png" [checked] [ref=f2e640]
+                  - generic [ref=f2e641]: org-chart.png
+                - treeitem "Select projects projects Collapse projects" [checked] [expanded] [level=1] [ref=f2e647]:
+                  - checkbox "Select projects" [checked] [ref=f2e649]
+                  - generic [ref=f2e650]: projects
+                  - button "Collapse projects" [ref=f2e655]
+                - treeitem "Select projects/transit-valley-tycoon transit-valley-tycoon Expand transit-valley-tycoon" [checked] [level=2] [ref=f2e658]:
+                  - checkbox "Select projects/transit-valley-tycoon" [checked] [ref=f2e660]
+                  - generic [ref=f2e661]: transit-valley-tycoon
+                  - button "Expand transit-valley-tycoon" [ref=f2e666]
+                - treeitem "Select projects/velin-sofarch velin-sofarch Expand velin-sofarch" [checked] [level=2] [ref=f2e669]:
+                  - checkbox "Select projects/velin-sofarch" [checked] [ref=f2e671]
+                  - generic [ref=f2e672]: velin-sofarch
+                  - button "Expand velin-sofarch" [ref=f2e677]
+                - treeitem "Select skills skills Collapse skills" [checked] [expanded] [level=1] [ref=f2e680]:
+                  - checkbox "Select skills" [checked] [ref=f2e682]
+                  - generic [ref=f2e683]: skills
+                  - button "Collapse skills" [ref=f2e688]
+                - treeitem "Select skills/anthropics anthropics Expand anthropics" [checked] [level=2] [ref=f2e691]:
+                  - checkbox "Select skills/anthropics" [checked] [ref=f2e693]
+                  - generic [ref=f2e694]: anthropics
+                  - button "Expand anthropics" [ref=f2e699]
+                - treeitem "Select skills/company company Expand company" [checked] [level=2] [ref=f2e702]:
+                  - checkbox "Select skills/company" [checked] [ref=f2e704]
+                  - generic [ref=f2e705]: company
+                  - button "Expand company" [ref=f2e710]
+                - treeitem "Select skills/getsentry getsentry Expand getsentry" [checked] [level=2] [ref=f2e713]:
+                  - checkbox "Select skills/getsentry" [checked] [ref=f2e715]
+                  - generic [ref=f2e716]: getsentry
+                  - button "Expand getsentry" [ref=f2e721]
+                - treeitem "Select skills/jeffallan jeffallan Expand jeffallan" [checked] [level=2] [ref=f2e724]:
+                  - checkbox "Select skills/jeffallan" [checked] [ref=f2e726]
+                  - generic [ref=f2e727]: jeffallan
+                  - button "Expand jeffallan" [ref=f2e732]
+                - treeitem "Select skills/paperclipai paperclipai Expand paperclipai" [checked] [level=2] [ref=f2e735]:
+                  - checkbox "Select skills/paperclipai" [checked] [ref=f2e737]
+                  - generic [ref=f2e738]: paperclipai
+                  - button "Expand paperclipai" [ref=f2e743]
+                - treeitem "Select skills/sickn33 sickn33 Expand sickn33" [checked] [level=2] [ref=f2e746]:
+                  - checkbox "Select skills/sickn33" [checked] [ref=f2e748]
+                  - generic [ref=f2e749]: sickn33
+                  - button "Expand sickn33" [ref=f2e754]
+                - treeitem "Select skills/wshobson wshobson Expand wshobson" [checked] [level=2] [ref=f2e757]:
+                  - checkbox "Select skills/wshobson" [checked] [ref=f2e759]
+                  - generic [ref=f2e760]: wshobson
+                  - button "Expand wshobson" [ref=f2e765]
+            - generic [ref=f2e769]:
+              - generic [ref=f2e770]: .paperclip.yaml
+              - code [ref=f2e776]: "schema: \"paperclip/v1\" agents: albert: role: \"ceo\" adapter: config: dangerouslySkipPermissions: true graceSec: 20 model: \"9router/model-gratis\" type: \"opencode_local\" runtime: heartbeat: intervalSec: 300 skipTimerWhenNoActionableWork: true permissions: canCreateAgents: true canCreateSkills: true permissionGrants: - permissionKey: \"agents:configure\" - permissionKey: \"agents:suggest-changes\" - permissionKey: \"audit:view_agent_actions\" - permissionKey: \"inbox:manage\" scope: responsibleUserOnly: true - permissionKey: \"skills:create\" - permissionKey: \"skills:suggest-changes\" - permissionKey: \"tasks:assign\" - permissionKey: \"tasks:assign_scope\" scope: subtreeRootAgentId: \"e89643c5-31ad-480c-939b-fb24265331d9\" - permissionKey: \"tasks:manage_active_checkouts\" - permissionKey: \"tools:manage_connections\" - permissionKey: \"tools:manage_profiles\" - permissionKey: \"tools:manage_runtime\" - permissionKey: \"tools:use\" - permissionKey: \"tools:view_audit\" appearance: characterVersion: \"cap-v1\" paletteId: \"orchid-peach\" schemaVersion: 1 arnold: role: \"general\" capabilities: \"Technical strategy, architecture standards, engineering coordination, debt and quality ownership.\" adapter: config: dangerouslySkipPermissions: true graceSec: 20 model: \"9router/model-gratis\" type: \"opencode_local\" runtime: heartbeat: intervalSec: 300 skipTimerWhenNoActionableWork: true permissions: canCreateAgents: true canCreateSkills: true permissionGrants: - permissionKey: \"agents:configure\" - permissionKey: \"agents:suggest-changes\" - permissionKey: \"audit:view_agent_actions\" - permissionKey: \"inbox:manage\" scope: responsibleUserOnly: true - permissionKey: \"skills:create\" - permissionKey: \"skills:suggest-changes\" - permissionKey: \"tasks:assign\" - permissionKey: \"tasks:assign_scope\" scope: subtreeRootAgentId: \"19f78331-f234-4838-b61b-04e10193d73c\" - permissionKey: \"tasks:manage_active_checkouts\" - permissionKey: \"tools:manage_connections\" - permissionKey: \"tools:manage_profiles\" - permissionKey: \"tools:manage_runtime\" - permissionKey: \"tools:use\" - permissionKey: \"tools:view_audit\" appearance: characterVersion: \"cap-v1\" paletteId: \"lime-lagoon\" schemaVersion: 1 ayla: role: \"general\" capabilities: \"UI/UX design, interaction design, design systems, usability.\" adapter: config: dangerouslySkipPermissions: true graceSec: 20 model: \"9router/model-gratis\" type: \"opencode_local\" runtime: permissions: canCreateAgents: true canCreateSkills: true permissionGrants: - permissionKey: \"agents:configure\" - permissionKey: \"agents:suggest-changes\" - permissionKey: \"audit:view_agent_actions\" - permissionKey: \"inbox:manage\" scope: responsibleUserOnly: true - permissionKey: \"skills:create\" - permissionKey: \"skills:suggest-changes\" - permissionKey: \"tasks:assign\" - permissionKey: \"tasks:assign_scope\" scope: subtreeRootAgentId: \"85eb77d0-d48e-4f02-9785-a27b3ffc0179\" - permissionKey: \"tasks:manage_active_checkouts\" - permissionKey: \"tools:manage_connections\" - permissionKey: \"tools:manage_profiles\" - permissionKey: \"tools:manage_runtime\" - permissionKey: \"tools:use\" - permissionKey: \"tools:view_audit\" appearance: characterVersion: \"cap-v1\" paletteId: \"arctic-blue\" schemaVersion: 1 bianca: role: \"general\" capabilities: \"Quality assurance, test strategy, automated testing, regression prevention.\" adapter: config: dangerouslySkipPermissions: true graceSec: 20 model: \"9router/model-gratis\" type: \"opencode_local\" runtime: permissions: canCreateAgents: true canCreateSkills: true permissionGrants: - permissionKey: \"agents:configure\" - permissionKey: \"agents:suggest-changes\" - permissionKey: \"audit:view_agent_actions\" - permissionKey: \"inbox:manage\" scope: responsibleUserOnly: true - permissionKey: \"skills:create\" - permissionKey: \"skills:suggest-changes\" - permissionKey: \"tasks:assign\" - permissionKey: \"tasks:assign_scope\" scope: subtreeRootAgentId: \"c561d8f3-a7c1-4906-a9dd-ef5bbd3a749a\" - permissionKey: \"tasks:manage_active_checkouts\" - permissionKey: \"tools:manage_connections\" - permissionKey: \"tools:manage_profiles\" - permissionKey: \"tools:manage_runtime\" - permissionKey: \"tools:use\" - permissionKey: \"tools:view_audit\" appearance: characterVersion: \"cap-v1\" paletteId: \"violet-ember\" schemaVersion: 1 darian: role: \"general\" capabilities: \"Research analysis, data interpretation, literature review, reporting.\" adapter: config: dangerouslySkipPermissions: true graceSec: 20 model: \"9router/model-gratis\" type: \"opencode_local\" runtime: permissions: canCreateAgents: true canCreateSkills: true permissionGrants: - permissionKey: \"agents:configure\" - permissionKey: \"agents:suggest-changes\" - permissionKey: \"audit:view_agent_actions\" - permissionKey: \"inbox:manage\" scope: responsibleUserOnly: true - permissionKey: \"skills:create\" - permissionKey: \"skills:suggest-changes\" - permissionKey: \"tasks:assign\" - permissionKey: \"tasks:assign_scope\" scope: subtreeRootAgentId: \"71a2e3ac-1aca-41b2-b0fe-c06668b6447b\" - permissionKey: \"tasks:manage_active_checkouts\" - permissionKey: \"tools:manage_connections\" - permissionKey: \"tools:manage_profiles\" - permissionKey: \"tools:manage_runtime\" - permissionKey: \"tools:use\" - permissionKey: \"tools:view_audit\" appearance: characterVersion: \"cap-v1\" paletteId: \"pink-lemonade\" schemaVersion: 1 elara: role: \"general\" icon: \"microscope\" capabilities: \"Research strategy, research engineering coordination, research analysis, innovation management.\" adapter: config: dangerouslySkipPermissions: true graceSec: 20 model: \"9router/model-gratis\" type: \"opencode_local\" runtime: permissions: canCreateAgents: true canCreateSkills: true permissionGrants: - permissionKey: \"agents:configure\" - permissionKey: \"agents:suggest-changes\" - permissionKey: \"audit:view_agent_actions\" - permissionKey: \"inbox:manage\" scope: responsibleUserOnly: true - permissionKey: \"skills:create\" - permissionKey: \"skills:suggest-changes\" - permissionKey: \"tasks:assign\" - permissionKey: \"tasks:assign_scope\" scope: subtreeRootAgentId: \"98bbcc75-b4d5-4853-aee2-030dd432b0e8\" - permissionKey: \"tasks:manage_active_checkouts\" - permissionKey: \"tools:manage_connections\" - permissionKey: \"tools:manage_profiles\" - permissionKey: \"tools:manage_runtime\" - permissionKey: \"tools:use\" - permissionKey: \"tools:view_audit\" appearance: characterVersion: \"cap-v1\" paletteId: \"coral-mint\" schemaVersion: 1 felix: role: \"general\" capabilities: \"Product engineering, feature implementation, API integration, end-to-end delivery.\" adapter: config: dangerouslySkipPermissions: true graceSec: 20 model: \"9router/model-gratis\" type: \"opencode_local\" runtime: heartbeat: enabled: true intervalSec: 60 skipTimerWhenNoActionableWork: true permissions: canCreateAgents: true canCreateSkills: true permissionGrants: - permissionKey: \"agents:configure\" - permissionKey: \"agents:suggest-changes\" - permissionKey: \"audit:view_agent_actions\" - permissionKey: \"inbox:manage\" scope: responsibleUserOnly: true - permissionKey: \"skills:create\" - permissionKey: \"skills:suggest-changes\" - permissionKey: \"tasks:assign\" - permissionKey: \"tasks:assign_scope\" scope: subtreeRootAgentId: \"2017a253-dd97-453a-b704-31c696edf9a6\" - permissionKey: \"tasks:manage_active_checkouts\" - permissionKey: \"tools:manage_connections\" - permissionKey: \"tools:manage_profiles\" - permissionKey: \"tools:manage_runtime\" - permissionKey: \"tools:use\" - permissionKey: \"tools:view_audit\" appearance: characterVersion: \"cap-v1\" paletteId: \"orchid-peach\" schemaVersion: 1 ilya: role: \"general\" capabilities: \"AI/ML engineering, model integration, LLM applications, AI pipelines.\" adapter: config: dangerouslySkipPermissions: true graceSec: 20 model: \"9router/model-gratis\" type: \"opencode_local\" runtime: permissions: canCreateAgents: true canCreateSkills: true permissionGrants: - permissionKey: \"agents:configure\" - permissionKey: \"agents:suggest-changes\" - permissionKey: \"audit:view_agent_actions\" - permissionKey: \"inbox:manage\" scope: responsibleUserOnly: true - permissionKey: \"skills:create\" - permissionKey: \"skills:suggest-changes\" - permissionKey: \"tasks:assign\" - permissionKey: \"tasks:assign_scope\" scope: subtreeRootAgentId: \"3d88a9db-51b0-4de9-97b9-5074325dfd83\" - permissionKey: \"tasks:manage_active_checkouts\" - permissionKey: \"tools:manage_connections\" - permissionKey: \"tools:manage_profiles\" - permissionKey: \"tools:manage_runtime\" - permissionKey: \"tools:use\" - permissionKey: \"tools:view_audit\" appearance: characterVersion: \"cap-v1\" paletteId: \"tangerine-cobalt\" schemaVersion: 1 kael: role: \"general\" capabilities: \"Frontend development, React, TypeScript, responsive UI, web performance.\" adapter: config: dangerouslySkipPermissions: true graceSec: 20 model: \"9router/model-gratis\" type: \"opencode_local\" runtime: heartbeat: enabled: true intervalSec: 60 skipTimerWhenNoActionableWork: true permissions: canCreateAgents: true canCreateSkills: true permissionGrants: - permissionKey: \"agents:configure\" - permissionKey: \"agents:suggest-changes\" - permissionKey: \"audit:view_agent_actions\" - permissionKey: \"inbox:manage\" scope: responsibleUserOnly: true - permissionKey: \"skills:create\" - permissionKey: \"skills:suggest-changes\" - permissionKey: \"tasks:assign\" - permissionKey: \"tasks:assign_scope\" scope: subtreeRootAgentId: \"2264f05e-b1b3-44f0-9733-9914f01ee79f\" - permissionKey: \"tasks:manage_active_checkouts\" - permissionKey: \"tools:manage_connections\" - permissionKey: \"tools:manage_profiles\" - permissionKey: \"tools:manage_runtime\" - permissionKey: \"tools:use\" - permissionKey: \"tools:view_audit\" appearance: characterVersion: \"cap-v1\" paletteId: \"flamingo-jade\" schemaVersion: 1 marcus: role: \"general\" capabilities: \"Backend development, APIs, databases, services, reliability.\" adapter: config: dangerouslySkipPermissions: true graceSec: 20 model: \"9router/model-gratis\" type: \"opencode_local\" runtime: permissions: canCreateAgents: true canCreateSkills: true permissionGrants: - permissionKey: \"agents:configure\" - permissionKey: \"agents:suggest-changes\" - permissionKey: \"audit:view_agent_actions\" - permissionKey: \"inbox:manage\" scope: responsibleUserOnly: true - permissionKey: \"skills:create\" - permissionKey: \"skills:suggest-changes\" - permissionKey: \"tasks:assign\" - permissionKey: \"tasks:assign_scope\" scope: subtreeRootAgentId: \"5097585d-4ecc-480c-b7b6-a1b535396d84\" - permissionKey: \"tasks:manage_active_checkouts\" - permissionKey: \"tools:manage_connections\" - permissionKey: \"tools:manage_profiles\" - permissionKey: \"tools:manage_runtime\" - permissionKey: \"tools:use\" - permissionKey: \"tools:view_audit\" appearance: characterVersion: \"cap-v1\" paletteId: \"lime-lagoon\" schemaVersion: 1 mika: role: \"general\" capabilities: \"Research analysis, data interpretation, literature review, reporting.\" adapter: config: dangerouslySkipPermissions: true graceSec: 20 model: \"9router/model-gratis\" type: \"opencode_local\" runtime: heartbeat: enabled: true intervalSec: 60 skipTimerWhenNoActionableWork: true permissions: canCreateAgents: true canCreateSkills: true permissionGrants: - permissionKey: \"agents:configure\" - permissionKey: \"agents:suggest-changes\" - permissionKey: \"audit:view_agent_actions\" - permissionKey: \"inbox:manage\" scope: responsibleUserOnly: true - permissionKey: \"skills:create\" - permissionKey: \"skills:suggest-changes\" - permissionKey: \"tasks:assign\" - permissionKey: \"tasks:assign_scope\" scope: subtreeRootAgentId: \"99bb2617-de5b-44cb-bd63-99b0fb7ea146\" - permissionKey: \"tasks:manage_active_checkouts\" - permissionKey: \"tools:manage_connections\" - permissionKey: \"tools:manage_profiles\" - permissionKey: \"tools:manage_runtime\" - permissionKey: \"tools:use\" - permissionKey: \"tools:view_audit\" appearance: characterVersion: \"cap-v1\" paletteId: \"solar-flare\" schemaVersion: 1 nadia: role: \"general\" capabilities: \"Application security, threat modeling, secure coding, vulnerability assessment.\" adapter: config: dangerouslySkipPermissions: true graceSec: 20 model: \"9router/model-gratis\" type: \"opencode_local\" runtime: permissions: canCreateAgents: true canCreateSkills: true permissionGrants: - permissionKey: \"agents:configure\" - permissionKey: \"agents:suggest-changes\" - permissionKey: \"audit:view_agent_actions\" - permissionKey: \"inbox:manage\" scope: responsibleUserOnly: true - permissionKey: \"skills:create\" - permissionKey: \"skills:suggest-changes\" - permissionKey: \"tasks:assign\" - permissionKey: \"tasks:assign_scope\" scope: subtreeRootAgentId: \"7a6d6a11-c3a3-4890-aaa0-29d90a6f5f81\" - permissionKey: \"tasks:manage_active_checkouts\" - permissionKey: \"tools:manage_connections\" - permissionKey: \"tools:manage_profiles\" - permissionKey: \"tools:manage_runtime\" - permissionKey: \"tools:use\" - permissionKey: \"tools:view_audit\" appearance: characterVersion: \"cap-v1\" paletteId: \"coral-current\" schemaVersion: 1 nolan: role: \"general\" capabilities: \"Research engineering, experimentation, prototype development, research tooling.\" adapter: config: dangerouslySkipPermissions: true graceSec: 20 model: \"9router/model-gratis\" type: \"opencode_local\" runtime: permissions: canCreateAgents: true canCreateSkills: true permissionGrants: - permissionKey: \"agents:configure\" - permissionKey: \"agents:suggest-changes\" - permissionKey: \"audit:view_agent_actions\" - permissionKey: \"inbox:manage\" scope: responsibleUserOnly: true - permissionKey: \"skills:create\" - permissionKey: \"skills:suggest-changes\" - permissionKey: \"tasks:assign\" - permissionKey: \"tasks:assign_scope\" scope: subtreeRootAgentId: \"35fbc2d1-d036-439c-97ef-bd4541034bf5\" - permissionKey: \"tasks:manage_active_checkouts\" - permissionKey: \"tools:manage_connections\" - permissionKey: \"tools:manage_profiles\" - permissionKey: \"tools:manage_runtime\" - permissionKey: \"tools:use\" - permissionKey: \"tools:view_audit\" appearance: characterVersion: \"cap-v1\" paletteId: \"coral-current\" schemaVersion: 1 orion: role: \"general\" capabilities: \"CI/CD, infrastructure, deployment, observability, platform operations.\" adapter: config: dangerouslySkipPermissions: true graceSec: 20 model: \"9router/model-gratis\" type: \"opencode_local\" runtime: permissions: canCreateAgents: true canCreateSkills: true permissionGrants: - permissionKey: \"agents:configure\" - permissionKey: \"agents:suggest-changes\" - permissionKey: \"audit:view_agent_actions\" - permissionKey: \"inbox:manage\" scope: responsibleUserOnly: true - permissionKey: \"skills:create\" - permissionKey: \"skills:suggest-changes\" - permissionKey: \"tasks:assign\" - permissionKey: \"tasks:assign_scope\" scope: subtreeRootAgentId: \"5513bb92-08d6-4707-abfd-2f199dd923da\" - permissionKey: \"tasks:manage_active_checkouts\" - permissionKey: \"tools:manage_connections\" - permissionKey: \"tools:manage_profiles\" - permissionKey: \"tools:manage_runtime\" - permissionKey: \"tools:use\" - permissionKey: \"tools:view_audit\" appearance: characterVersion: \"cap-v1\" paletteId: \"orchid-peach\" schemaVersion: 1 selene: role: \"general\" icon: \"atom\" capabilities: \"Advanced research, experimentation, scientific analysis, model evaluation.\" adapter: config: dangerouslySkipPermissions: true graceSec: 20 model: \"9router/model-gratis\" type: \"opencode_local\" runtime: permissions: canCreateAgents: true canCreateSkills: true permissionGrants: - permissionKey: \"agents:configure\" - permissionKey: \"agents:suggest-changes\" - permissionKey: \"audit:view_agent_actions\" - permissionKey: \"inbox:manage\" scope: responsibleUserOnly: true - permissionKey: \"skills:create\" - permissionKey: \"skills:suggest-changes\" - permissionKey: \"tasks:assign\" - permissionKey: \"tasks:assign_scope\" scope: subtreeRootAgentId: \"85c6d6c4-82f8-4ef4-836a-ed00846a9c02\" - permissionKey: \"tasks:manage_active_checkouts\" - permissionKey: \"tools:manage_connections\" - permissionKey: \"tools:manage_profiles\" - permissionKey: \"tools:manage_runtime\" - permissionKey: \"tools:use\" - permissionKey: \"tools:view_audit\" appearance: characterVersion: \"cap-v1\" paletteId: \"arctic-blue\" schemaVersion: 1 tessa: role: \"general\" icon: \"file-code\" capabilities: \"Technical documentation, API docs, onboarding, architecture docs, release notes.\" adapter: config: dangerouslySkipPermissions: true graceSec: 20 model: \"9router/model-gratis\" type: \"opencode_local\" runtime: heartbeat: skipTimerWhenNoActionableWork: true permissions: canCreateAgents: true canCreateSkills: true permissionGrants: - permissionKey: \"agents:configure\" - permissionKey: \"agents:suggest-changes\" - permissionKey: \"audit:view_agent_actions\" - permissionKey: \"inbox:manage\" scope: responsibleUserOnly: true - permissionKey: \"skills:create\" - permissionKey: \"skills:suggest-changes\" - permissionKey: \"tasks:assign\" - permissionKey: \"tasks:assign_scope\" scope: subtreeRootAgentId: \"626fcd30-b4e3-46f0-8d9d-faa28683d7b6\" - permissionKey: \"tasks:manage_active_checkouts\" - permissionKey: \"tools:manage_connections\" - permissionKey: \"tools:manage_profiles\" - permissionKey: \"tools:manage_runtime\" - permissionKey: \"tools:use\" - permissionKey: \"tools:view_audit\" appearance: characterVersion: \"cap-v1\" paletteId: \"cherry-pop\" schemaVersion: 1 zane: role: \"general\" capabilities: \"Blockchain development, smart contracts, Web3 integration, distributed systems.\" adapter: config: dangerouslySkipPermissions: true graceSec: 20 model: \"9router/model-gratis\" type: \"opencode_local\" runtime: permissions: canCreateAgents: true canCreateSkills: true permissionGrants: - permissionKey: \"agents:configure\" - permissionKey: \"agents:suggest-changes\" - permissionKey: \"audit:view_agent_actions\" - permissionKey: \"inbox:manage\" scope: responsibleUserOnly: true - permissionKey: \"skills:create\" - permissionKey: \"skills:suggest-changes\" - permissionKey: \"tasks:assign\" - permissionKey: \"tasks:assign_scope\" scope: subtreeRootAgentId: \"585e3490-5b04-446d-bc40-a55ca4fbe97b\" - permissionKey: \"tasks:manage_active_checkouts\" - permissionKey: \"tools:manage_connections\" - permissionKey: \"tools:manage_profiles\" - permissionKey: \"tools:manage_runtime\" - permissionKey: \"tools:use\" - permissionKey: \"tools:view_audit\" appearance: characterVersion: \"cap-v1\" paletteId: \"tangerine-cobalt\" schemaVersion: 1 company: logoPath: \"images/company-logo.png\" projects: transit-valley-tycoon: color: \"#3b82f6\" status: \"planned\" workspaces: aehter-labs-transit-valley: name: \"aehter-labs/transit-valley\" metadata: githubRepositoryId: \"1318445039\" isPrimary: true repoUrl: \"https://github.com/aehter-labs/transit-valley\" sourceType: \"git_repo\" visibility: \"default\" velin-sofarch: color: \"#14b8a6\" status: \"planned\" schemaVersion: 7 sidebar: agents: - \"albert\" - \"arnold\" - \"elara\" - \"ayla\" - \"bianca\" - \"felix\" - \"ilya\" - \"kael\" - \"marcus\" - \"nadia\" - \"orion\" - \"tessa\" - \"zane\" - \"darian\" - \"mika\" - \"nolan\" - \"selene\" projects: - \"transit-valley-tycoon\" - \"velin-sofarch\""
+  - generic [ref=f2e178]:
+    - heading "Command Palette" [level=2] [ref=f2e179]
+    - paragraph [ref=f2e180]: Search for a command to run...

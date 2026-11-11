@@ -1,0 +1,24 @@
+patches/*.patch whitespace=-space-before-tab
+
+# The Runner build hashes/compares several generated JSON files against raw
+# bytes (protocol manifest sha256, replay goldens, semantic contracts). Force
+# LF here so Windows checkouts match the committed LF checksums.
+packages/paperclip-runner/** text=auto eol=lf
+
+# Provider failure contract is byte-compared against LF generator output.
+packages/shared/src/provider-failure.generated.ts text=auto eol=lf
+
+# Executed via execve inside the image; a CRLF shebang breaks container start.
+scripts/docker-entrypoint.sh text=auto eol=lf
+
+# Migration files are sha256-hashed into the migration ledger; CRLF checkout
+# changes every hash and makes an applied database replay from scratch.
+packages/db/src/migrations/** text=auto eol=lf
+
+# Bundled skill content is sha256-compared against the DB-seeded snapshot
+# (ensureBundledSkillReleases) and the catalog pins per-file sha256. CRLF
+# checkout changes every hash and throws "does not match its seeded snapshot".
+skills-releases/** text=auto eol=lf
+skills/** text=auto eol=lf
+packages/skills-catalog/** text=auto eol=lf
+packages/teams-catalog/** text=auto eol=lf

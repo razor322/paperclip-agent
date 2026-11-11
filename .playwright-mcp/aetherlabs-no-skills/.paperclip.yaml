@@ -1,0 +1,915 @@
+﻿schema: "paperclip/v1"
+agents:
+  albert:
+    role: "ceo"
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        graceSec: 20
+        model: "9router/model-gratis"
+      type: "opencode_local"
+    runtime:
+      heartbeat:
+        intervalSec: 300
+        skipTimerWhenNoActionableWork: true
+    permissions:
+      canCreateAgents: true
+      canCreateSkills: true
+    permissionGrants:
+      -
+        permissionKey: "agents:configure"
+      -
+        permissionKey: "agents:suggest-changes"
+      -
+        permissionKey: "audit:view_agent_actions"
+      -
+        permissionKey: "inbox:manage"
+        scope:
+          responsibleUserOnly: true
+      -
+        permissionKey: "skills:create"
+      -
+        permissionKey: "skills:suggest-changes"
+      -
+        permissionKey: "tasks:assign"
+      -
+        permissionKey: "tasks:assign_scope"
+        scope:
+          subtreeRootAgentId: "e89643c5-31ad-480c-939b-fb24265331d9"
+      -
+        permissionKey: "tasks:manage_active_checkouts"
+      -
+        permissionKey: "tools:manage_connections"
+      -
+        permissionKey: "tools:manage_profiles"
+      -
+        permissionKey: "tools:manage_runtime"
+      -
+        permissionKey: "tools:use"
+      -
+        permissionKey: "tools:view_audit"
+    appearance:
+      characterVersion: "cap-v1"
+      paletteId: "orchid-peach"
+      schemaVersion: 1
+  arnold:
+    role: "general"
+    capabilities: "Technical strategy, architecture standards, engineering coordination, debt and quality ownership."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        graceSec: 20
+        model: "9router/model-gratis"
+      type: "opencode_local"
+    runtime:
+      heartbeat:
+        intervalSec: 300
+        skipTimerWhenNoActionableWork: true
+    permissions:
+      canCreateAgents: true
+      canCreateSkills: true
+    permissionGrants:
+      -
+        permissionKey: "agents:configure"
+      -
+        permissionKey: "agents:suggest-changes"
+      -
+        permissionKey: "audit:view_agent_actions"
+      -
+        permissionKey: "inbox:manage"
+        scope:
+          responsibleUserOnly: true
+      -
+        permissionKey: "skills:create"
+      -
+        permissionKey: "skills:suggest-changes"
+      -
+        permissionKey: "tasks:assign"
+      -
+        permissionKey: "tasks:assign_scope"
+        scope:
+          subtreeRootAgentId: "19f78331-f234-4838-b61b-04e10193d73c"
+      -
+        permissionKey: "tasks:manage_active_checkouts"
+      -
+        permissionKey: "tools:manage_connections"
+      -
+        permissionKey: "tools:manage_profiles"
+      -
+        permissionKey: "tools:manage_runtime"
+      -
+        permissionKey: "tools:use"
+      -
+        permissionKey: "tools:view_audit"
+    appearance:
+      characterVersion: "cap-v1"
+      paletteId: "lime-lagoon"
+      schemaVersion: 1
+  ayla:
+    role: "general"
+    capabilities: "UI/UX design, interaction design, design systems, usability."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        graceSec: 20
+        model: "9router/model-gratis"
+      type: "opencode_local"
+    runtime:
+    permissions:
+      canCreateAgents: true
+      canCreateSkills: true
+    permissionGrants:
+      -
+        permissionKey: "agents:configure"
+      -
+        permissionKey: "agents:suggest-changes"
+      -
+        permissionKey: "audit:view_agent_actions"
+      -
+        permissionKey: "inbox:manage"
+        scope:
+          responsibleUserOnly: true
+      -
+        permissionKey: "skills:create"
+      -
+        permissionKey: "skills:suggest-changes"
+      -
+        permissionKey: "tasks:assign"
+      -
+        permissionKey: "tasks:assign_scope"
+        scope:
+          subtreeRootAgentId: "85eb77d0-d48e-4f02-9785-a27b3ffc0179"
+      -
+        permissionKey: "tasks:manage_active_checkouts"
+      -
+        permissionKey: "tools:manage_connections"
+      -
+        permissionKey: "tools:manage_profiles"
+      -
+        permissionKey: "tools:manage_runtime"
+      -
+        permissionKey: "tools:use"
+      -
+        permissionKey: "tools:view_audit"
+    appearance:
+      characterVersion: "cap-v1"
+      paletteId: "arctic-blue"
+      schemaVersion: 1
+  bianca:
+    role: "general"
+    capabilities: "Quality assurance, test strategy, automated testing, regression prevention."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        graceSec: 20
+        model: "9router/model-gratis"
+      type: "opencode_local"
+    runtime:
+    permissions:
+      canCreateAgents: true
+      canCreateSkills: true
+    permissionGrants:
+      -
+        permissionKey: "agents:configure"
+      -
+        permissionKey: "agents:suggest-changes"
+      -
+        permissionKey: "audit:view_agent_actions"
+      -
+        permissionKey: "inbox:manage"
+        scope:
+          responsibleUserOnly: true
+      -
+        permissionKey: "skills:create"
+      -
+        permissionKey: "skills:suggest-changes"
+      -
+        permissionKey: "tasks:assign"
+      -
+        permissionKey: "tasks:assign_scope"
+        scope:
+          subtreeRootAgentId: "c561d8f3-a7c1-4906-a9dd-ef5bbd3a749a"
+      -
+        permissionKey: "tasks:manage_active_checkouts"
+      -
+        permissionKey: "tools:manage_connections"
+      -
+        permissionKey: "tools:manage_profiles"
+      -
+        permissionKey: "tools:manage_runtime"
+      -
+        permissionKey: "tools:use"
+      -
+        permissionKey: "tools:view_audit"
+    appearance:
+      characterVersion: "cap-v1"
+      paletteId: "violet-ember"
+      schemaVersion: 1
+  darian:
+    role: "general"
+    capabilities: "Research analysis, data interpretation, literature review, reporting."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        graceSec: 20
+        model: "9router/model-gratis"
+      type: "opencode_local"
+    runtime:
+    permissions:
+      canCreateAgents: true
+      canCreateSkills: true
+    permissionGrants:
+      -
+        permissionKey: "agents:configure"
+      -
+        permissionKey: "agents:suggest-changes"
+      -
+        permissionKey: "audit:view_agent_actions"
+      -
+        permissionKey: "inbox:manage"
+        scope:
+          responsibleUserOnly: true
+      -
+        permissionKey: "skills:create"
+      -
+        permissionKey: "skills:suggest-changes"
+      -
+        permissionKey: "tasks:assign"
+      -
+        permissionKey: "tasks:assign_scope"
+        scope:
+          subtreeRootAgentId: "71a2e3ac-1aca-41b2-b0fe-c06668b6447b"
+      -
+        permissionKey: "tasks:manage_active_checkouts"
+      -
+        permissionKey: "tools:manage_connections"
+      -
+        permissionKey: "tools:manage_profiles"
+      -
+        permissionKey: "tools:manage_runtime"
+      -
+        permissionKey: "tools:use"
+      -
+        permissionKey: "tools:view_audit"
+    appearance:
+      characterVersion: "cap-v1"
+      paletteId: "pink-lemonade"
+      schemaVersion: 1
+  elara:
+    role: "general"
+    icon: "microscope"
+    capabilities: "Research strategy, research engineering coordination, research analysis, innovation management."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        graceSec: 20
+        model: "9router/model-gratis"
+      type: "opencode_local"
+    runtime:
+    permissions:
+      canCreateAgents: true
+      canCreateSkills: true
+    permissionGrants:
+      -
+        permissionKey: "agents:configure"
+      -
+        permissionKey: "agents:suggest-changes"
+      -
+        permissionKey: "audit:view_agent_actions"
+      -
+        permissionKey: "inbox:manage"
+        scope:
+          responsibleUserOnly: true
+      -
+        permissionKey: "skills:create"
+      -
+        permissionKey: "skills:suggest-changes"
+      -
+        permissionKey: "tasks:assign"
+      -
+        permissionKey: "tasks:assign_scope"
+        scope:
+          subtreeRootAgentId: "98bbcc75-b4d5-4853-aee2-030dd432b0e8"
+      -
+        permissionKey: "tasks:manage_active_checkouts"
+      -
+        permissionKey: "tools:manage_connections"
+      -
+        permissionKey: "tools:manage_profiles"
+      -
+        permissionKey: "tools:manage_runtime"
+      -
+        permissionKey: "tools:use"
+      -
+        permissionKey: "tools:view_audit"
+    appearance:
+      characterVersion: "cap-v1"
+      paletteId: "coral-mint"
+      schemaVersion: 1
+  felix:
+    role: "general"
+    capabilities: "Product engineering, feature implementation, API integration, end-to-end delivery."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        graceSec: 20
+        model: "9router/model-gratis"
+      type: "opencode_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        intervalSec: 60
+        skipTimerWhenNoActionableWork: true
+    permissions:
+      canCreateAgents: true
+      canCreateSkills: true
+    permissionGrants:
+      -
+        permissionKey: "agents:configure"
+      -
+        permissionKey: "agents:suggest-changes"
+      -
+        permissionKey: "audit:view_agent_actions"
+      -
+        permissionKey: "inbox:manage"
+        scope:
+          responsibleUserOnly: true
+      -
+        permissionKey: "skills:create"
+      -
+        permissionKey: "skills:suggest-changes"
+      -
+        permissionKey: "tasks:assign"
+      -
+        permissionKey: "tasks:assign_scope"
+        scope:
+          subtreeRootAgentId: "2017a253-dd97-453a-b704-31c696edf9a6"
+      -
+        permissionKey: "tasks:manage_active_checkouts"
+      -
+        permissionKey: "tools:manage_connections"
+      -
+        permissionKey: "tools:manage_profiles"
+      -
+        permissionKey: "tools:manage_runtime"
+      -
+        permissionKey: "tools:use"
+      -
+        permissionKey: "tools:view_audit"
+    appearance:
+      characterVersion: "cap-v1"
+      paletteId: "orchid-peach"
+      schemaVersion: 1
+  ilya:
+    role: "general"
+    capabilities: "AI/ML engineering, model integration, LLM applications, AI pipelines."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        graceSec: 20
+        model: "9router/model-gratis"
+      type: "opencode_local"
+    runtime:
+    permissions:
+      canCreateAgents: true
+      canCreateSkills: true
+    permissionGrants:
+      -
+        permissionKey: "agents:configure"
+      -
+        permissionKey: "agents:suggest-changes"
+      -
+        permissionKey: "audit:view_agent_actions"
+      -
+        permissionKey: "inbox:manage"
+        scope:
+          responsibleUserOnly: true
+      -
+        permissionKey: "skills:create"
+      -
+        permissionKey: "skills:suggest-changes"
+      -
+        permissionKey: "tasks:assign"
+      -
+        permissionKey: "tasks:assign_scope"
+        scope:
+          subtreeRootAgentId: "3d88a9db-51b0-4de9-97b9-5074325dfd83"
+      -
+        permissionKey: "tasks:manage_active_checkouts"
+      -
+        permissionKey: "tools:manage_connections"
+      -
+        permissionKey: "tools:manage_profiles"
+      -
+        permissionKey: "tools:manage_runtime"
+      -
+        permissionKey: "tools:use"
+      -
+        permissionKey: "tools:view_audit"
+    appearance:
+      characterVersion: "cap-v1"
+      paletteId: "tangerine-cobalt"
+      schemaVersion: 1
+  kael:
+    role: "general"
+    capabilities: "Frontend development, React, TypeScript, responsive UI, web performance."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        graceSec: 20
+        model: "9router/model-gratis"
+      type: "opencode_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        intervalSec: 60
+        skipTimerWhenNoActionableWork: true
+    permissions:
+      canCreateAgents: true
+      canCreateSkills: true
+    permissionGrants:
+      -
+        permissionKey: "agents:configure"
+      -
+        permissionKey: "agents:suggest-changes"
+      -
+        permissionKey: "audit:view_agent_actions"
+      -
+        permissionKey: "inbox:manage"
+        scope:
+          responsibleUserOnly: true
+      -
+        permissionKey: "skills:create"
+      -
+        permissionKey: "skills:suggest-changes"
+      -
+        permissionKey: "tasks:assign"
+      -
+        permissionKey: "tasks:assign_scope"
+        scope:
+          subtreeRootAgentId: "2264f05e-b1b3-44f0-9733-9914f01ee79f"
+      -
+        permissionKey: "tasks:manage_active_checkouts"
+      -
+        permissionKey: "tools:manage_connections"
+      -
+        permissionKey: "tools:manage_profiles"
+      -
+        permissionKey: "tools:manage_runtime"
+      -
+        permissionKey: "tools:use"
+      -
+        permissionKey: "tools:view_audit"
+    appearance:
+      characterVersion: "cap-v1"
+      paletteId: "flamingo-jade"
+      schemaVersion: 1
+  marcus:
+    role: "general"
+    capabilities: "Backend development, APIs, databases, services, reliability."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        graceSec: 20
+        model: "9router/model-gratis"
+      type: "opencode_local"
+    runtime:
+    permissions:
+      canCreateAgents: true
+      canCreateSkills: true
+    permissionGrants:
+      -
+        permissionKey: "agents:configure"
+      -
+        permissionKey: "agents:suggest-changes"
+      -
+        permissionKey: "audit:view_agent_actions"
+      -
+        permissionKey: "inbox:manage"
+        scope:
+          responsibleUserOnly: true
+      -
+        permissionKey: "skills:create"
+      -
+        permissionKey: "skills:suggest-changes"
+      -
+        permissionKey: "tasks:assign"
+      -
+        permissionKey: "tasks:assign_scope"
+        scope:
+          subtreeRootAgentId: "5097585d-4ecc-480c-b7b6-a1b535396d84"
+      -
+        permissionKey: "tasks:manage_active_checkouts"
+      -
+        permissionKey: "tools:manage_connections"
+      -
+        permissionKey: "tools:manage_profiles"
+      -
+        permissionKey: "tools:manage_runtime"
+      -
+        permissionKey: "tools:use"
+      -
+        permissionKey: "tools:view_audit"
+    appearance:
+      characterVersion: "cap-v1"
+      paletteId: "lime-lagoon"
+      schemaVersion: 1
+  mika:
+    role: "general"
+    capabilities: "Research analysis, data interpretation, literature review, reporting."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        graceSec: 20
+        model: "9router/model-gratis"
+      type: "opencode_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        intervalSec: 60
+        skipTimerWhenNoActionableWork: true
+    permissions:
+      canCreateAgents: true
+      canCreateSkills: true
+    permissionGrants:
+      -
+        permissionKey: "agents:configure"
+      -
+        permissionKey: "agents:suggest-changes"
+      -
+        permissionKey: "audit:view_agent_actions"
+      -
+        permissionKey: "inbox:manage"
+        scope:
+          responsibleUserOnly: true
+      -
+        permissionKey: "skills:create"
+      -
+        permissionKey: "skills:suggest-changes"
+      -
+        permissionKey: "tasks:assign"
+      -
+        permissionKey: "tasks:assign_scope"
+        scope:
+          subtreeRootAgentId: "99bb2617-de5b-44cb-bd63-99b0fb7ea146"
+      -
+        permissionKey: "tasks:manage_active_checkouts"
+      -
+        permissionKey: "tools:manage_connections"
+      -
+        permissionKey: "tools:manage_profiles"
+      -
+        permissionKey: "tools:manage_runtime"
+      -
+        permissionKey: "tools:use"
+      -
+        permissionKey: "tools:view_audit"
+    appearance:
+      characterVersion: "cap-v1"
+      paletteId: "solar-flare"
+      schemaVersion: 1
+  nadia:
+    role: "general"
+    capabilities: "Application security, threat modeling, secure coding, vulnerability assessment."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        graceSec: 20
+        model: "9router/model-gratis"
+      type: "opencode_local"
+    runtime:
+    permissions:
+      canCreateAgents: true
+      canCreateSkills: true
+    permissionGrants:
+      -
+        permissionKey: "agents:configure"
+      -
+        permissionKey: "agents:suggest-changes"
+      -
+        permissionKey: "audit:view_agent_actions"
+      -
+        permissionKey: "inbox:manage"
+        scope:
+          responsibleUserOnly: true
+      -
+        permissionKey: "skills:create"
+      -
+        permissionKey: "skills:suggest-changes"
+      -
+        permissionKey: "tasks:assign"
+      -
+        permissionKey: "tasks:assign_scope"
+        scope:
+          subtreeRootAgentId: "7a6d6a11-c3a3-4890-aaa0-29d90a6f5f81"
+      -
+        permissionKey: "tasks:manage_active_checkouts"
+      -
+        permissionKey: "tools:manage_connections"
+      -
+        permissionKey: "tools:manage_profiles"
+      -
+        permissionKey: "tools:manage_runtime"
+      -
+        permissionKey: "tools:use"
+      -
+        permissionKey: "tools:view_audit"
+    appearance:
+      characterVersion: "cap-v1"
+      paletteId: "coral-current"
+      schemaVersion: 1
+  nolan:
+    role: "general"
+    capabilities: "Research engineering, experimentation, prototype development, research tooling."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        graceSec: 20
+        model: "9router/model-gratis"
+      type: "opencode_local"
+    runtime:
+    permissions:
+      canCreateAgents: true
+      canCreateSkills: true
+    permissionGrants:
+      -
+        permissionKey: "agents:configure"
+      -
+        permissionKey: "agents:suggest-changes"
+      -
+        permissionKey: "audit:view_agent_actions"
+      -
+        permissionKey: "inbox:manage"
+        scope:
+          responsibleUserOnly: true
+      -
+        permissionKey: "skills:create"
+      -
+        permissionKey: "skills:suggest-changes"
+      -
+        permissionKey: "tasks:assign"
+      -
+        permissionKey: "tasks:assign_scope"
+        scope:
+          subtreeRootAgentId: "35fbc2d1-d036-439c-97ef-bd4541034bf5"
+      -
+        permissionKey: "tasks:manage_active_checkouts"
+      -
+        permissionKey: "tools:manage_connections"
+      -
+        permissionKey: "tools:manage_profiles"
+      -
+        permissionKey: "tools:manage_runtime"
+      -
+        permissionKey: "tools:use"
+      -
+        permissionKey: "tools:view_audit"
+    appearance:
+      characterVersion: "cap-v1"
+      paletteId: "coral-current"
+      schemaVersion: 1
+  orion:
+    role: "general"
+    capabilities: "CI/CD, infrastructure, deployment, observability, platform operations."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        graceSec: 20
+        model: "9router/model-gratis"
+      type: "opencode_local"
+    runtime:
+    permissions:
+      canCreateAgents: true
+      canCreateSkills: true
+    permissionGrants:
+      -
+        permissionKey: "agents:configure"
+      -
+        permissionKey: "agents:suggest-changes"
+      -
+        permissionKey: "audit:view_agent_actions"
+      -
+        permissionKey: "inbox:manage"
+        scope:
+          responsibleUserOnly: true
+      -
+        permissionKey: "skills:create"
+      -
+        permissionKey: "skills:suggest-changes"
+      -
+        permissionKey: "tasks:assign"
+      -
+        permissionKey: "tasks:assign_scope"
+        scope:
+          subtreeRootAgentId: "5513bb92-08d6-4707-abfd-2f199dd923da"
+      -
+        permissionKey: "tasks:manage_active_checkouts"
+      -
+        permissionKey: "tools:manage_connections"
+      -
+        permissionKey: "tools:manage_profiles"
+      -
+        permissionKey: "tools:manage_runtime"
+      -
+        permissionKey: "tools:use"
+      -
+        permissionKey: "tools:view_audit"
+    appearance:
+      characterVersion: "cap-v1"
+      paletteId: "orchid-peach"
+      schemaVersion: 1
+  selene:
+    role: "general"
+    icon: "atom"
+    capabilities: "Advanced research, experimentation, scientific analysis, model evaluation."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        graceSec: 20
+        model: "9router/model-gratis"
+      type: "opencode_local"
+    runtime:
+    permissions:
+      canCreateAgents: true
+      canCreateSkills: true
+    permissionGrants:
+      -
+        permissionKey: "agents:configure"
+      -
+        permissionKey: "agents:suggest-changes"
+      -
+        permissionKey: "audit:view_agent_actions"
+      -
+        permissionKey: "inbox:manage"
+        scope:
+          responsibleUserOnly: true
+      -
+        permissionKey: "skills:create"
+      -
+        permissionKey: "skills:suggest-changes"
+      -
+        permissionKey: "tasks:assign"
+      -
+        permissionKey: "tasks:assign_scope"
+        scope:
+          subtreeRootAgentId: "85c6d6c4-82f8-4ef4-836a-ed00846a9c02"
+      -
+        permissionKey: "tasks:manage_active_checkouts"
+      -
+        permissionKey: "tools:manage_connections"
+      -
+        permissionKey: "tools:manage_profiles"
+      -
+        permissionKey: "tools:manage_runtime"
+      -
+        permissionKey: "tools:use"
+      -
+        permissionKey: "tools:view_audit"
+    appearance:
+      characterVersion: "cap-v1"
+      paletteId: "arctic-blue"
+      schemaVersion: 1
+  tessa:
+    role: "general"
+    icon: "file-code"
+    capabilities: "Technical documentation, API docs, onboarding, architecture docs, release notes."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        graceSec: 20
+        model: "9router/model-gratis"
+      type: "opencode_local"
+    runtime:
+      heartbeat:
+        skipTimerWhenNoActionableWork: true
+    permissions:
+      canCreateAgents: true
+      canCreateSkills: true
+    permissionGrants:
+      -
+        permissionKey: "agents:configure"
+      -
+        permissionKey: "agents:suggest-changes"
+      -
+        permissionKey: "audit:view_agent_actions"
+      -
+        permissionKey: "inbox:manage"
+        scope:
+          responsibleUserOnly: true
+      -
+        permissionKey: "skills:create"
+      -
+        permissionKey: "skills:suggest-changes"
+      -
+        permissionKey: "tasks:assign"
+      -
+        permissionKey: "tasks:assign_scope"
+        scope:
+          subtreeRootAgentId: "626fcd30-b4e3-46f0-8d9d-faa28683d7b6"
+      -
+        permissionKey: "tasks:manage_active_checkouts"
+      -
+        permissionKey: "tools:manage_connections"
+      -
+        permissionKey: "tools:manage_profiles"
+      -
+        permissionKey: "tools:manage_runtime"
+      -
+        permissionKey: "tools:use"
+      -
+        permissionKey: "tools:view_audit"
+    appearance:
+      characterVersion: "cap-v1"
+      paletteId: "cherry-pop"
+      schemaVersion: 1
+  zane:
+    role: "general"
+    capabilities: "Blockchain development, smart contracts, Web3 integration, distributed systems."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        graceSec: 20
+        model: "9router/model-gratis"
+      type: "opencode_local"
+    runtime:
+    permissions:
+      canCreateAgents: true
+      canCreateSkills: true
+    permissionGrants:
+      -
+        permissionKey: "agents:configure"
+      -
+        permissionKey: "agents:suggest-changes"
+      -
+        permissionKey: "audit:view_agent_actions"
+      -
+        permissionKey: "inbox:manage"
+        scope:
+          responsibleUserOnly: true
+      -
+        permissionKey: "skills:create"
+      -
+        permissionKey: "skills:suggest-changes"
+      -
+        permissionKey: "tasks:assign"
+      -
+        permissionKey: "tasks:assign_scope"
+        scope:
+          subtreeRootAgentId: "585e3490-5b04-446d-bc40-a55ca4fbe97b"
+      -
+        permissionKey: "tasks:manage_active_checkouts"
+      -
+        permissionKey: "tools:manage_connections"
+      -
+        permissionKey: "tools:manage_profiles"
+      -
+        permissionKey: "tools:manage_runtime"
+      -
+        permissionKey: "tools:use"
+      -
+        permissionKey: "tools:view_audit"
+    appearance:
+      characterVersion: "cap-v1"
+      paletteId: "tangerine-cobalt"
+      schemaVersion: 1
+company:
+  logoPath: "images/company-logo.png"
+projects:
+  transit-valley-tycoon:
+    color: "#3b82f6"
+    status: "planned"
+    workspaces:
+      aehter-labs-transit-valley:
+        name: "aehter-labs/transit-valley"
+        metadata:
+          githubRepositoryId: "1318445039"
+        isPrimary: true
+        repoUrl: "https://github.com/aehter-labs/transit-valley"
+        sourceType: "git_repo"
+        visibility: "default"
+  velin-sofarch:
+    color: "#14b8a6"
+    status: "planned"
+schemaVersion: 7
+sidebar:
+  agents:
+    - "albert"
+    - "arnold"
+    - "elara"
+    - "ayla"
+    - "bianca"
+    - "felix"
+    - "ilya"
+    - "kael"
+    - "marcus"
+    - "nadia"
+    - "orion"
+    - "tessa"
+    - "zane"
+    - "darian"
+    - "mika"
+    - "nolan"
+    - "selene"
+  projects:
+    - "transit-valley-tycoon"
+    - "velin-sofarch"

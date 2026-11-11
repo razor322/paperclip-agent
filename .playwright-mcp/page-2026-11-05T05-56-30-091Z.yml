@@ -1,0 +1,90 @@
+- generic [ref=e7]:
+  - link "Skip to Main Content" [ref=e8] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e9]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - complementary [ref=e14]:
+          - link "Back to app" [ref=e17] [cursor=pointer]:
+            - /url: /AET/dashboard
+          - navigation "Settings" [ref=e22]:
+            - generic [ref=e23]:
+              - link "General" [ref=e24] [cursor=pointer]:
+                - /url: /AET/company/settings
+              - link "Profile" [ref=e28] [cursor=pointer]:
+                - /url: /AET/company/settings/instance/profile
+              - link "Members" [ref=e35] [cursor=pointer]:
+                - /url: /AET/company/settings/members
+              - link "Secrets" [ref=e43] [cursor=pointer]:
+                - /url: /AET/company/settings/secrets
+              - link "Environments" [ref=e49] [cursor=pointer]:
+                - /url: /AET/company/settings/instance/environments
+              - link "Access" [ref=e63] [cursor=pointer]:
+                - /url: /AET/company/settings/instance/access
+              - link "Export" [ref=e68] [cursor=pointer]:
+                - /url: /AET/company/export
+              - link "Import" [ref=e74] [cursor=pointer]:
+                - /url: /AET/company/import
+              - link "Experimental" [ref=e80] [cursor=pointer]:
+                - /url: /AET/company/settings/instance/experimental
+              - link "Plugins" [ref=e85] [cursor=pointer]:
+                - /url: /AET/company/settings/instance/plugins
+              - link "Adapters" [ref=e90] [cursor=pointer]:
+                - /url: /AET/company/settings/instance/adapters
+        - generic [ref=e97]:
+          - button "Open account menu" [ref=e98]:
+            - generic [ref=e99]: GY
+            - generic [ref=e101]: gybran
+          - link "Share feedback" [ref=e102] [cursor=pointer]:
+            - /url: https://paperclip.ing/feedback
+      - separator "Resize sidebar" [ref=e105]
+    - generic [ref=e107]:
+      - navigation "breadcrumb" [ref=e111]:
+        - list [ref=e112]:
+          - listitem [ref=e113]:
+            - link "AetherLabs" [ref=e114] [cursor=pointer]:
+              - /url: /AET/dashboard
+          - listitem [aria-hidden] [ref=e115]
+          - listitem [ref=e118]:
+            - link "Settings" [ref=e119] [cursor=pointer]:
+              - /url: /AET/company/settings
+          - listitem [aria-hidden] [ref=e120]
+          - listitem [ref=e123]:
+            - link "Import" [disabled] [ref=e124]
+      - main [ref=e127]:
+        - generic [ref=e129]:
+          - generic [ref=e130]:
+            - heading "Import source" [level=2] [ref=e131]
+            - paragraph [ref=e132]: Choose a GitHub repo or upload a local Paperclip zip package.
+          - generic [ref=e133]:
+            - button "GitHub repo" [ref=e134]
+            - button "Local zip" [active] [ref=e139]
+          - generic [ref=e181]:
+            - button "Choose zip" [ref=e183]
+            - paragraph [ref=e184]: Upload a .zip exported directly from Paperclip. Re-zipped archives created by Finder, Explorer, or other zip tools may not import correctly.
+          - generic [ref=e152]:
+            - generic [ref=e153]:
+              - generic [ref=e154]: Target
+              - button [ref=e155]
+            - combobox [ref=e159]:
+              - option "Create new organization" [selected]
+              - 'option "Existing company: AetherLabs"'
+          - generic [ref=e160]:
+            - generic [ref=e161]:
+              - generic [ref=e162]: New organization name
+              - button [ref=e163]
+            - textbox "Imported Organization" [ref=e167]
+          - generic [ref=e168]:
+            - generic [ref=e169]:
+              - generic [ref=e170]: Collision strategy
+              - button [ref=e171]
+            - combobox [ref=e175]:
+              - option "Rename on conflict" [selected]
+              - option "Skip on conflict"
+              - option "Replace existing"
+          - generic [ref=e176]:
+            - button "Preview import" [disabled]
+            - generic [ref=e177]: Choose a package above to enable the preview.
+  - generic [ref=e178]:
+    - heading "Command Palette" [level=2] [ref=e179]
+    - paragraph [ref=e180]: Search for a command to run...

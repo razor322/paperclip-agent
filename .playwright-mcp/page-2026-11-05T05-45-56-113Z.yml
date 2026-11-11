@@ -1,0 +1,100 @@
+- generic [ref=f2e7]:
+  - link "Skip to Main Content" [ref=f2e8] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=f2e9]:
+    - generic [ref=f2e10]:
+      - generic [ref=f2e11]:
+        - complementary [ref=f2e14]:
+          - link "Back to app" [ref=f2e17] [cursor=pointer]:
+            - /url: /AET/dashboard
+          - navigation "Settings" [ref=f2e22]:
+            - generic [ref=f2e23]:
+              - link "General" [ref=f2e24] [cursor=pointer]:
+                - /url: /AET/company/settings
+              - link "Profile" [ref=f2e28] [cursor=pointer]:
+                - /url: /AET/company/settings/instance/profile
+              - link "Members" [ref=f2e35] [cursor=pointer]:
+                - /url: /AET/company/settings/members
+              - link "Secrets" [ref=f2e43] [cursor=pointer]:
+                - /url: /AET/company/settings/secrets
+              - link "Environments" [ref=f2e49] [cursor=pointer]:
+                - /url: /AET/company/settings/instance/environments
+              - link "Access" [ref=f2e63] [cursor=pointer]:
+                - /url: /AET/company/settings/instance/access
+              - link "Export" [ref=f2e68] [cursor=pointer]:
+                - /url: /AET/company/export
+              - link "Import" [ref=f2e74] [cursor=pointer]:
+                - /url: /AET/company/import
+              - link "Experimental" [ref=f2e80] [cursor=pointer]:
+                - /url: /AET/company/settings/instance/experimental
+              - link "Plugins" [ref=f2e85] [cursor=pointer]:
+                - /url: /AET/company/settings/instance/plugins
+              - link "Adapters" [ref=f2e90] [cursor=pointer]:
+                - /url: /AET/company/settings/instance/adapters
+        - generic [ref=f2e97]:
+          - button "Open account menu" [ref=f2e98]:
+            - generic [ref=f2e99]: GY
+            - generic [ref=f2e101]: gybran
+          - link "Share feedback" [ref=f2e102] [cursor=pointer]:
+            - /url: https://paperclip.ing/feedback
+      - separator "Resize sidebar" [ref=f2e105]
+    - generic [ref=f2e107]:
+      - navigation "breadcrumb" [ref=f2e111]:
+        - list [ref=f2e112]:
+          - listitem [ref=f2e113]:
+            - link "AetherLabs" [ref=f2e114] [cursor=pointer]:
+              - /url: /AET/dashboard
+          - listitem [aria-hidden] [ref=f2e115]
+          - listitem [ref=f2e118]:
+            - link "Settings" [ref=f2e119] [cursor=pointer]:
+              - /url: /AET/company/settings
+          - listitem [aria-hidden] [ref=f2e120]
+          - listitem [ref=f2e123]:
+            - link "Import" [disabled] [ref=f2e124]
+      - main [ref=f2e127]:
+        - generic [ref=f2e129]:
+          - generic [ref=f2e130]:
+            - heading "Import source" [level=2] [ref=f2e131]
+            - paragraph [ref=f2e132]: Choose a GitHub repo or upload a local Paperclip zip package.
+          - generic [ref=f2e133]:
+            - button "GitHub repo" [ref=f2e134]
+            - button "Local zip" [active] [ref=f2e139]
+          - generic [ref=f2e181]:
+            - button "Choose zip" [ref=f2e183]
+            - paragraph [ref=f2e184]: Upload a .zip exported directly from Paperclip. Re-zipped archives created by Finder, Explorer, or other zip tools may not import correctly.
+          - generic [ref=f2e152]:
+            - generic [ref=f2e153]:
+              - generic [ref=f2e154]: Target
+              - button [ref=f2e155]
+            - combobox [ref=f2e159]:
+              - option "Create new organization" [selected]
+              - 'option "Existing company: AetherLabs"'
+          - generic [ref=f2e160]:
+            - generic [ref=f2e161]:
+              - generic [ref=f2e162]: New organization name
+              - button [ref=f2e163]
+            - textbox "Imported Organization" [ref=f2e167]
+          - generic [ref=f2e168]:
+            - generic [ref=f2e169]:
+              - generic [ref=f2e170]: Collision strategy
+              - button [ref=f2e171]
+            - combobox [ref=f2e175]:
+              - option "Rename on conflict" [selected]
+              - option "Skip on conflict"
+              - option "Replace existing"
+          - generic [ref=f2e176]:
+            - button "Preview import" [disabled]
+            - generic [ref=f2e177]: Choose a package above to enable the preview.
+  - generic [ref=f2e178]:
+    - heading "Command Palette" [level=2] [ref=f2e179]
+    - paragraph [ref=f2e180]: Search for a command to run...
+  - complementary "Paperclip announcements" [ref=f2e185]:
+    - region [ref=f2e186]:
+      - img "Paperclip agents with their own sets of connected apps." [ref=f2e188]
+      - button "Dismiss announcement" [ref=f2e189]
+      - generic [ref=f2e190]:
+        - paragraph [ref=f2e191]: Introducing Connectors
+        - heading "Give your agents the access they need" [level=2] [ref=f2e192]
+        - paragraph [ref=f2e193]: Connect Gmail, GitHub, Notion, and more. Choose which agents get access, which accounts they use, and which actions they can take.
+      - link "Explore connectors" [ref=f2e196] [cursor=pointer]:
+        - /url: /AET/apps

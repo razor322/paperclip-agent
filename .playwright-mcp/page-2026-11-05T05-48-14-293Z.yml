@@ -1,0 +1,155 @@
+- generic [ref=f2e1]:
+  - generic [ref=f2e7]:
+    - link "Skip to Main Content" [ref=f2e8] [cursor=pointer]:
+      - /url: "#main-content"
+    - generic [ref=f2e9]:
+      - generic [ref=f2e10]:
+        - generic [ref=f2e11]:
+          - complementary [ref=f2e794]:
+            - button "Open AetherLabs organization switcher" [ref=f2e796]:
+              - generic [ref=f2e797]:
+                - generic [ref=f2e798]: A
+                - generic "AetherLabs" [ref=f2e801]
+            - navigation [ref=f2e802]:
+              - generic [ref=f2e803]:
+                - button "New Task" [ref=f2e804]
+                - link "Search" [ref=f2e809] [cursor=pointer]:
+                  - /url: /AET/search
+                - link "Dashboard" [ref=f2e815] [cursor=pointer]:
+                  - /url: /AET/dashboard
+                - link "Inbox" [ref=f2e823] [cursor=pointer]:
+                  - /url: /AET/inbox
+              - generic [ref=f2e829]:
+                - generic [ref=f2e831]:
+                  - button "Collapse Work" [expanded] [ref=f2e832]
+                  - generic [ref=f2e835]: Work
+                - generic [ref=f2e838]:
+                  - link "Tasks" [ref=f2e839] [cursor=pointer]:
+                    - /url: /AET/issues
+                  - link "Projects" [ref=f2e845] [cursor=pointer]:
+                    - /url: /AET/projects
+                  - link "Routines" [ref=f2e850] [cursor=pointer]:
+                    - /url: /AET/routines
+                  - link "Artifacts" [ref=f2e858] [cursor=pointer]:
+                    - /url: /AET/artifacts
+              - generic [ref=f2e865]:
+                - generic [ref=f2e867]:
+                  - button "Collapse Org" [expanded] [ref=f2e868]
+                  - generic [ref=f2e871]: Org
+                - generic [ref=f2e874]:
+                  - link "Agents" [ref=f2e875] [cursor=pointer]:
+                    - /url: /AET/agents
+                  - link "Skills" [ref=f2e883] [cursor=pointer]:
+                    - /url: /AET/skills
+                  - link "Connectors" [ref=f2e896] [cursor=pointer]:
+                    - /url: /AET/apps
+                  - link "Audit" [ref=f2e906] [cursor=pointer]:
+                    - /url: /AET/activity
+              - generic [ref=f2e915]:
+                - button "Collapse Agents" [expanded] [ref=f2e916]
+                - button "Agents section actions" [ref=f2e919]:
+                  - generic [ref=f2e920]: Agents
+                - button "New agent" [ref=f2e921]
+          - generic [ref=f2e97]:
+            - button "Open account menu" [ref=f2e98]:
+              - generic [ref=f2e99]: GY
+              - generic [ref=f2e101]: gybran
+            - link "Share feedback" [ref=f2e102] [cursor=pointer]:
+              - /url: https://paperclip.ing/feedback
+        - separator "Resize sidebar" [ref=f2e105]
+      - generic [ref=f2e107]:
+        - heading "Dashboard" [level=1] [ref=f2e922]
+        - main [ref=f2e127]:
+          - generic [ref=f2e923]:
+            - generic [ref=f2e924]:
+              - paragraph [ref=f2e929]: You have no agents.
+              - button "Create one here" [ref=f2e930]
+            - generic [ref=f2e931]:
+              - heading "Agents" [level=3] [ref=f2e932]
+              - paragraph [ref=f2e934]: No recent agent runs.
+            - generic [ref=f2e935]:
+              - link "0 Agents Enabled 0 running, 0 paused, 0 errors" [ref=f2e936] [cursor=pointer]:
+                - /url: /AET/agents
+                - generic [ref=f2e939]:
+                  - paragraph [ref=f2e940]: "0"
+                  - paragraph [ref=f2e941]: Agents Enabled
+                  - generic [ref=f2e942]: 0 running, 0 paused, 0 errors
+              - link "0 Tasks In Progress 0 open, 0 blocked" [ref=f2e947] [cursor=pointer]:
+                - /url: /AET/issues
+                - generic [ref=f2e950]:
+                  - paragraph [ref=f2e951]: "0"
+                  - paragraph [ref=f2e952]: Tasks In Progress
+                  - generic [ref=f2e953]: 0 open, 0 blocked
+              - link "$0.00 Month Spend Unlimited budget" [ref=f2e958] [cursor=pointer]:
+                - /url: /AET/costs
+                - generic [ref=f2e961]:
+                  - paragraph [ref=f2e962]: $0.00
+                  - paragraph [ref=f2e963]: Month Spend
+                  - generic [ref=f2e964]: Unlimited budget
+              - link "0 Pending Approvals Awaiting board review" [ref=f2e967] [cursor=pointer]:
+                - /url: /AET/approvals
+                - generic [ref=f2e970]:
+                  - paragraph [ref=f2e971]: "0"
+                  - paragraph [ref=f2e972]: Pending Approvals
+                  - generic [ref=f2e973]: Awaiting board review
+            - generic [ref=f2e977]:
+              - generic [ref=f2e978]:
+                - generic [ref=f2e979]:
+                  - heading "Run Activity" [level=3] [ref=f2e980]
+                  - text: Last 14 days
+                - paragraph [ref=f2e981]: No runs yet
+              - generic [ref=f2e982]:
+                - generic [ref=f2e983]:
+                  - heading "Tasks by Status" [level=3] [ref=f2e984]
+                  - text: Last 14 days
+                - paragraph [ref=f2e985]: No tasks
+              - generic [ref=f2e986]:
+                - generic [ref=f2e987]:
+                  - heading "Success Rate" [level=3] [ref=f2e988]
+                  - text: Last 14 days
+                - paragraph [ref=f2e989]: No runs yet
+            - generic [ref=f2e990]:
+              - generic [ref=f2e991]:
+                - heading "Recent Activity" [level=3] [ref=f2e992]
+                - generic [ref=f2e993]:
+                  - generic [ref=f2e996]:
+                    - generic [ref=f2e998]: GY
+                    - generic [ref=f2e999]:
+                      - paragraph [ref=f2e1001]:
+                        - generic "gybran announcement dismissed" [ref=f2e1002]
+                      - generic [ref=f2e1003]: 1m ago
+                  - generic [ref=f2e1007]:
+                    - generic [ref=f2e1009]: GY
+                    - generic [ref=f2e1010]:
+                      - paragraph [ref=f2e1012]:
+                        - generic "gybran ai connection local login started" [ref=f2e1013]
+                      - generic [ref=f2e1014]: 14m ago
+                  - generic [ref=f2e1018]:
+                    - generic [ref=f2e1020]: GY
+                    - generic [ref=f2e1021]:
+                      - paragraph [ref=f2e1023]:
+                        - generic "gybran created organization" [ref=f2e1024]
+                      - generic [ref=f2e1025]: 14m ago
+              - generic [ref=f2e1027]:
+                - heading "Recent Tasks" [level=3] [ref=f2e1028]
+                - paragraph [ref=f2e1030]: No tasks yet.
+    - generic [ref=f2e178]:
+      - heading "Command Palette" [level=2] [ref=f2e179]
+      - paragraph [ref=f2e180]: Search for a command to run...
+  - generic [ref=f2e1034]:
+    - generic [ref=f2e1035]:
+      - button "Create your first agent" [disabled] [ref=f2e1036]
+      - button "Connect a model" [disabled] [ref=f2e1037]
+      - button "Review" [disabled] [ref=f2e1038]
+      - generic [ref=f2e1039]: Step 1 of 3
+    - generic [ref=f2e1040]:
+      - generic [ref=f2e1041]: Albert
+      - heading "Create your first agent" [level=1] [ref=f2e1053]
+      - paragraph [ref=f2e1055]:
+        - generic [ref=f2e1056]: Albert is ready to work!
+    - generic [ref=f2e1058]:
+      - generic [ref=f2e1059]: Agent name
+      - textbox "Agent name" [active] [ref=f2e1060]:
+        - /placeholder: e.g. Chief of staff
+        - text: Albert
+    - button "Next" [ref=f2e1063]

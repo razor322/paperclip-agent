@@ -1,0 +1,11 @@
+[    1580ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3100/api/auth/get-session:0
+[    1675ms] [ERROR] Failed to load resource: the server responded with a status of 403 (Forbidden) @ http://localhost:3100/api/adapters:0
+[    1760ms] [ERROR] Failed to load resource: the server responded with a status of 403 (Forbidden) @ http://localhost:3100/api/instance/settings/experimental:0
+[    1760ms] [ERROR] Failed to load resource: the server responded with a status of 403 (Forbidden) @ http://localhost:3100/api/companies?scope=accessible:0
+[    2762ms] [ERROR] Failed to load resource: the server responded with a status of 403 (Forbidden) @ http://localhost:3100/api/adapters:0
+[    2794ms] [ERROR] Failed to load resource: the server responded with a status of 403 (Forbidden) @ http://localhost:3100/api/instance/settings/experimental:0
+[    4779ms] [ERROR] Failed to load resource: the server responded with a status of 403 (Forbidden) @ http://localhost:3100/api/adapters:0
+[    4809ms] [ERROR] Failed to load resource: the server responded with a status of 403 (Forbidden) @ http://localhost:3100/api/instance/settings/experimental:0
+[    8789ms] [ERROR] Failed to load resource: the server responded with a status of 403 (Forbidden) @ http://localhost:3100/api/adapters:0
+[    8825ms] [ERROR] Failed to load resource: the server responded with a status of 403 (Forbidden) @ http://localhost:3100/api/instance/settings/experimental:0
+[   21882ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3100/api/companies/92de71ba-9c0b-453e-a6f6-bc85872aea82/claude-oauth-token-status:0

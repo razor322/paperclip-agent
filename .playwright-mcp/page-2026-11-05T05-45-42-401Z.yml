@@ -1,0 +1,76 @@
+- generic [ref=f1e7]:
+  - link "Skip to Main Content" [ref=f1e8] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=f1e9]:
+    - generic [ref=f1e10]:
+      - generic [ref=f1e11]:
+        - complementary [ref=f1e13]:
+          - button "Open AetherLabs organization switcher" [ref=f1e15]:
+            - generic [ref=f1e16]:
+              - generic [ref=f1e17]: A
+              - generic "AetherLabs" [ref=f1e20]
+          - navigation [ref=f1e21]:
+            - generic [ref=f1e22]:
+              - button "New Task" [ref=f1e23]
+              - link "Search" [ref=f1e28] [cursor=pointer]:
+                - /url: /COMPANY/search
+              - link "Dashboard" [ref=f1e34] [cursor=pointer]:
+                - /url: /COMPANY/dashboard
+              - link "Inbox" [ref=f1e42] [cursor=pointer]:
+                - /url: /COMPANY/inbox
+            - generic [ref=f1e48]:
+              - generic [ref=f1e50]:
+                - button "Collapse Work" [expanded] [ref=f1e51]
+                - generic [ref=f1e54]: Work
+              - generic [ref=f1e57]:
+                - link "Tasks" [ref=f1e58] [cursor=pointer]:
+                  - /url: /COMPANY/issues
+                - link "Projects" [ref=f1e64] [cursor=pointer]:
+                  - /url: /COMPANY/projects
+                - link "Routines" [ref=f1e69] [cursor=pointer]:
+                  - /url: /COMPANY/routines
+                - link "Artifacts" [ref=f1e77] [cursor=pointer]:
+                  - /url: /COMPANY/artifacts
+            - generic [ref=f1e84]:
+              - generic [ref=f1e86]:
+                - button "Collapse Org" [expanded] [ref=f1e87]
+                - generic [ref=f1e90]: Org
+              - generic [ref=f1e93]:
+                - link "Agents" [ref=f1e94] [cursor=pointer]:
+                  - /url: /COMPANY/agents
+                - link "Skills" [ref=f1e102] [cursor=pointer]:
+                  - /url: /COMPANY/skills
+                - link "Connectors" [ref=f1e115] [cursor=pointer]:
+                  - /url: /COMPANY/apps
+                - link "Audit" [ref=f1e125] [cursor=pointer]:
+                  - /url: /COMPANY/activity
+            - generic [ref=f1e134]:
+              - button "Collapse Agents" [expanded] [ref=f1e135]
+              - button "Agents section actions" [ref=f1e138]:
+                - generic [ref=f1e139]: Agents
+              - button "New agent" [ref=f1e140]
+        - generic [ref=f1e142]:
+          - button "Open account menu" [ref=f1e143]:
+            - generic [ref=f1e144]: GY
+            - generic [ref=f1e146]: gybran
+          - link "Share feedback" [ref=f1e147] [cursor=pointer]:
+            - /url: https://paperclip.ing/feedback
+      - separator "Resize sidebar" [ref=f1e150]
+    - generic [ref=f1e152]:
+      - heading "Not Found" [level=1] [ref=f1e156]
+      - main [active] [ref=f1e159]:
+        - generic [ref=f1e161]:
+          - generic [ref=f1e166]:
+            - heading "Organization not found" [level=1] [ref=f1e167]
+            - paragraph [ref=f1e168]: No organization matches prefix "COMPANY".
+          - generic [ref=f1e169]:
+            - text: "Requested path:"
+            - code [ref=f1e170]: /company/import
+          - generic [ref=f1e171]:
+            - link "Open dashboard" [ref=f1e172] [cursor=pointer]:
+              - /url: /AET/dashboard
+            - link "Go home" [ref=f1e173] [cursor=pointer]:
+              - /url: /
+  - generic [ref=f1e174]:
+    - heading "Command Palette" [level=2] [ref=f1e175]
+    - paragraph [ref=f1e176]: Search for a command to run...

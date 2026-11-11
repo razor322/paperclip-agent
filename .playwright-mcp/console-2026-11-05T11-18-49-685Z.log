@@ -1,0 +1,10 @@
+[    1454ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ http://localhost:3100/api/auth/get-session:0
+[    1547ms] [ERROR] Failed to load resource: the server responded with a status of 403 (Forbidden) @ http://localhost:3100/api/instance/settings/experimental:0
+[    1658ms] [ERROR] Failed to load resource: the server responded with a status of 403 (Forbidden) @ http://localhost:3100/api/companies?scope=accessible:0
+[    1735ms] [ERROR] Failed to load resource: the server responded with a status of 403 (Forbidden) @ http://localhost:3100/api/adapters:0
+[    2570ms] [ERROR] Failed to load resource: the server responded with a status of 403 (Forbidden) @ http://localhost:3100/api/instance/settings/experimental:0
+[    2756ms] [ERROR] Failed to load resource: the server responded with a status of 403 (Forbidden) @ http://localhost:3100/api/adapters:0
+[    4587ms] [ERROR] Failed to load resource: the server responded with a status of 403 (Forbidden) @ http://localhost:3100/api/instance/settings/experimental:0
+[    4782ms] [ERROR] Failed to load resource: the server responded with a status of 403 (Forbidden) @ http://localhost:3100/api/adapters:0
+[    8612ms] [ERROR] Failed to load resource: the server responded with a status of 403 (Forbidden) @ http://localhost:3100/api/instance/settings/experimental:0
+[    8804ms] [ERROR] Failed to load resource: the server responded with a status of 403 (Forbidden) @ http://localhost:3100/api/adapters:0
